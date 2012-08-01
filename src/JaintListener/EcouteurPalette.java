@@ -1,7 +1,7 @@
 package JaintListener;
 /**
  * @(#)EcouteurPalette.java
- * Classe permettant d'afficher ou de désafficher une palette
+ * Classe permettant d'afficher ou de desafficher une palette
  *
  * @author Jeff
  * @version 1.00 2009/11/16
@@ -104,9 +104,9 @@ public class EcouteurPalette extends MouseAdapter
     }
 
     /**
-     * Affiche la palette à l'endroit du clique
+     * Affiche la palette a l'endroit du clique
      * @param palette La palette
-     * @param p Coordonnée où afficher le centre de la palette
+     * @param p Coordonnee où afficher le centre de la palette
      */
     public static void displayPalette(JPalette palette, Point p)
     {

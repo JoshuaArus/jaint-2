@@ -3,9 +3,9 @@ package Jaint;
 /**
  * @(#)JaintPalette.java
  *
- * Classe permettant de redessiner une JPalette avec un centre personnalisé
+ * Classe permettant de redessiner une JPalette avec un centre personnalise
  *
- * @author Jean-François
+ * @author Jean-Francois
  * @version 1.00 2009/11/30
  */
 
@@ -28,7 +28,7 @@ public class JaintPalette extends JPalette
 	 */
 	private static final long serialVersionUID = 7938539416577924695L;
 	/**
-     * le carré
+     * le carre
      */
     public static final int CARRE = 0;
     /**
@@ -42,21 +42,21 @@ public class JaintPalette extends JPalette
     public static final int ROND = 2;
 
     /**
-     * La première figure sélectionnable dans le choix des formes
+     * La premiere figure selectionnable dans le choix des formes
      */
     public static final int FIGURE1 = 0;
     /**
-     * La deuxième figure sélectionnable dans le choix des formes
+     * La deuxieme figure selectionnable dans le choix des formes
      */
     public static final int FIGURE2 = 1;
     /**
-     * La troisème figure sélectionnable dans le choix des formes
+     * La troiseme figure selectionnable dans le choix des formes
      */
     public static final int FIGURE3 = 2;
 
 
     /**
-     * Choix par défaut (permet de dessiner le centre de départ)
+     * Choix par defaut (permet de dessiner le centre de depart)
      */
     public static final int CHOIX_DEFAUT = 0;
 	
@@ -89,17 +89,17 @@ public class JaintPalette extends JPalette
     public static final int CHOIX_PIPETTE = 6;
 
     /**
-     * Choix du carré vide
+     * Choix du carre vide
      */
     public static final int CARRE1 = 7;
 
     /**
-     * Choix du carré à deux couleurs
+     * Choix du carre a deux couleurs
      */
     public static final int CARRE2 = 8;
 
     /**
-     * Choix du carré rempli à une couleur
+     * Choix du carre rempli a une couleur
      */
     public static final int CARRE3 = 9;
 
@@ -109,12 +109,12 @@ public class JaintPalette extends JPalette
     public static final int ROND1 = 10;
 
     /**
-     * Choix du rond rempli à deux couleurs
+     * Choix du rond rempli a deux couleurs
      */
     public static final int ROND2 = 11;
 
     /**
-     * Choix du rond rempli à une couleur
+     * Choix du rond rempli a une couleur
      */
     public static final int ROND3 = 12;
 
@@ -165,8 +165,8 @@ public class JaintPalette extends JPalette
 
      /**
      * Construit la palette
-     * @param angle Angle du début du premier bouton
-     * @param centerImage Chemin de l'image du centre par défaut
+     * @param angle Angle du debut du premier bouton
+     * @param centerImage Chemin de l'image du centre par defaut
      * @param i L'ihm principale
      */
     public JaintPalette(int angle, String centerImage, IHM i)
@@ -629,7 +629,7 @@ public class JaintPalette extends JPalette
                 }
                 else
                 {
-                    //remet les coordonnées des spinners à jour car elles ont été modifiées si la souris était sur le dégradé.
+                    //remet les coordonnees des spinners a jour car elles ont ete modifiees si la souris etait sur le degrade.
                      Color color;
 
                     if(btnColor[0].isChecked())
@@ -657,7 +657,7 @@ public class JaintPalette extends JPalette
 
 
     /**
-     * Dessine le slider de sélection de la taille au centre
+     * Dessine le slider de selection de la taille au centre
      */
     public void drawSlider()
     {
@@ -675,7 +675,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Dessine les boutons avec les images du carré, ligne et rond
+     * Dessine les boutons avec les images du carre, ligne et rond
      */
     public void drawFormeHaut()
     {
@@ -695,7 +695,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le code du centre (à comparer avec un des fields
+     * Renvoie le code du centre (a comparer avec un des fields
      * @return Le code du centre
      */
     public int getCenter()
@@ -704,7 +704,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Donne un code au centre (à choisir parmi les fields de la classe
+     * Donne un code au centre (a choisir parmi les fields de la classe
      * @param numCenter Le code du centre
      */
     public void setCenter(int numCenter)
@@ -714,31 +714,31 @@ public class JaintPalette extends JPalette
     
     
     /**
-     * Permet de changer la forme géométrique sélectionnée
+     * Permet de changer la forme geometrique selectionnee
      * @param forme Code de la forme
      */
     public void setForm(int forme) { selectedForm = forme;}
     /**
-     * Renvoie Le code de la forme géométrique sélectionnée
+     * Renvoie Le code de la forme geometrique selectionnee
      * @return Le code
      */
     public int getForm(){ return selectedForm;}
 
     /**
-     * Permet de changer les figures géométriques dessinées dans la partie du bas du centre
+     * Permet de changer les figures geometriques dessinees dans la partie du bas du centre
      * @param numFigure Le code de la figure du bas
      */
     public void setFigureBas(int numFigure){ figureBas = numFigure;}
     /**
-     * renvoie le code de la figure géométriques dessinées dans la partie du bas du centre
+     * renvoie le code de la figure geometriques dessinees dans la partie du bas du centre
      * @return Le code de la figure du bas
      */
     public int getFigureBas(){ return figureBas;}
 
     /**
-     * Met à jour les coordonnées de la souris
-     * @param x Coordonnée x de la souris
-     * @param y Coordonnée y de la souris
+     * Met a jour les coordonnees de la souris
+     * @param x Coordonnee x de la souris
+     * @param y Coordonnee y de la souris
      */
     public void setMouse(int x, int y)
     {
@@ -747,7 +747,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le tableau des deux boutons de sélection de la couleur
+     * Renvoie le tableau des deux boutons de selection de la couleur
      * @return Le tableaude boutons
      */
     public JBouton[] getBoutonColor()
@@ -756,7 +756,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le tableau de bouton des formes géométriques
+     * Renvoie le tableau de bouton des formes geometriques
      * @return Le tableau de bouton
      */
     public JBouton[] getBoutonForme()
@@ -765,7 +765,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le tableau contenant les trois JSpinners rouge vert bleu dans le sélecteur de couleur
+     * Renvoie le tableau contenant les trois JSpinners rouge vert bleu dans le selecteur de couleur
      * @return Le tableau
      */
     public JSpinner[] getSpinner()
@@ -831,8 +831,8 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Teste si la souris se trouve à l'emplacement du dégradé
-     * @return Le résultat du test
+     * Teste si la souris se trouve a l'emplacement du degrade
+     * @return Le resultat du test
      */
     public boolean onDegrade()
     {
@@ -841,7 +841,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie l'image contenant le dégradé avec la luminosité et la saturation d'une teinte sélectionnée
+     * Renvoie l'image contenant le degrade avec la luminosite et la saturation d'une teinte selectionnee
      * @return L'image
      */
     public BufferedImage getDegrade()
@@ -865,7 +865,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Appel à la fonction pythagore de la <code>JPalette</code>
+     * Appel a la fonction pythagore de la <code>JPalette</code>
      * @param hypothenuse
      * @return
      */
@@ -884,7 +884,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le tableau des boutons des formes du bas dans la sélection des formes géométriques
+     * Renvoie le tableau des boutons des formes du bas dans la selection des formes geometriques
      * @return Le tableau de boutons
      */
     public JBouton[] getBoutonBas()
@@ -893,8 +893,8 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le sélecteur de teinte
-     * @return Le sélecteur de teinte
+     * Renvoie le selecteur de teinte
+     * @return Le selecteur de teinte
      */
     public JSliderColorChooser getSliderColor()
     {
@@ -912,7 +912,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le JSlider permettant de changer la taille du tracé du dessin
+     * Renvoie le JSlider permettant de changer la taille du trace du dessin
      * @return Le JSlider
      */
     public JSlider getSliderSize()
@@ -921,8 +921,8 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Teste si la souris se trouve sur le sélecteur de couleur
-     * @return Le résultat du test
+     * Teste si la souris se trouve sur le selecteur de couleur
+     * @return Le resultat du test
      */
     public boolean onSliderColor()
     {
@@ -930,8 +930,8 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Met à jour la valeur du boolean permettant de savoir si la souris se trouve sur le sélecteur de couleur ou non
-     * @param on Vrai si sur le sélecteur, faux sinon
+     * Met a jour la valeur du boolean permettant de savoir si la souris se trouve sur le selecteur de couleur ou non
+     * @param on Vrai si sur le selecteur, faux sinon
      */
     public void setSliderColorState(boolean on)
     {
@@ -953,12 +953,12 @@ public class JaintPalette extends JPalette
 
     /**
      *
-     * Permet de créer un nouveau curseur. Si <code>img_cursor</code> vaut null, une image sera crée en fonction de <code>penSize</code> et <code>couleur</code>
+     * Permet de creer un nouveau curseur. Si <code>img_cursor</code> vaut null, une image sera cree en fonction de <code>penSize</code> et <code>couleur</code>
      * @param penSize Taille du curseur
      * @param couleur Couleur du curseur
      * @param img_cursor Image du curseur
      * @param hotspot Point du cursueur
-     * @return Le curseur crée
+     * @return Le curseur cree
      */
     public static Cursor getCursor(int penSize, Color couleur, Image img_cursor, Point hotspot)
     {
@@ -978,7 +978,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le code de la forme du haut sélectionnée
+     * Renvoie le code de la forme du haut selectionnee
      * @return Le code de la forme
      */
     public int getSelectedForm()
@@ -987,7 +987,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Renvoie le code de la forme du bas sélectionnée
+     * Renvoie le code de la forme du bas selectionnee
      * @return
      */
     public int getSelectedForm2() {
@@ -995,7 +995,7 @@ public class JaintPalette extends JPalette
     }
 
     /**
-     * Change la forme du bas sélectionnée
+     * Change la forme du bas selectionnee
      * @param i Le code de la forme
      */
     public void setSelectedForm2(int i)

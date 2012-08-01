@@ -162,7 +162,7 @@ public class EcouteurCCC implements MouseListener, MouseMotionListener
     }
 
     /**
-     * Définit la taille des marges contenant les icones de rotation libre
+     * Definit la taille des marges contenant les icones de rotation libre
      * @param margeW Largeur de la marge de gauche
      * @param margeH Hauteur de la marge du haut
      */
@@ -174,8 +174,8 @@ public class EcouteurCCC implements MouseListener, MouseMotionListener
     /**
      * Permet de copier une partie de l'image dans un calque
      * @param calque Calque permettant de stocker temporairement une image
-     * @param debut Origine de l'image à copier
-     * @param fin Fin de l'image à copier
+     * @param debut Origine de l'image a copier
+     * @param fin Fin de l'image a copier
      */
     public void stocker(Calque calque, Point debut, Point fin)
     {
@@ -196,9 +196,9 @@ public class EcouteurCCC implements MouseListener, MouseMotionListener
     }
 
     /**
-     * Dessine le calque spécifié sur l'image courant avec pour origine le point P
+     * Dessine le calque specifie sur l'image courant avec pour origine le point P
      * @param calque Calque contenant l'image
-     * @param p Coordonnée de l'origine du calque
+     * @param p Coordonnee de l'origine du calque
      */
     public void appliquer(Calque calque, Point p)
     {
@@ -216,7 +216,7 @@ public class EcouteurCCC implements MouseListener, MouseMotionListener
     }
 
     /**
-     * Fonction dessinant un rectangle sur l'image courante pour indiquer à l'utilisateur la zone qui sera copiée dans le calque
+     * Fonction dessinant un rectangle sur l'image courante pour indiquer a l'utilisateur la zone qui sera copiee dans le calque
      * @param debut Origine du rectangle
      * @param fin Fin du rectangle
      */
@@ -249,7 +249,7 @@ public class EcouteurCCC implements MouseListener, MouseMotionListener
      * Compare 2 points
      * @param debut Point A
      * @param fin Point B
-     * @return Vrai si les 2 points sont les mêmes, faux sinon
+     * @return Vrai si les 2 points sont les memes, faux sinon
      */
     public boolean cmp(Point debut, Point fin) {
         return (debut.x == fin.x && debut.y == fin.y);

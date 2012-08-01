@@ -16,7 +16,7 @@ public class EcouteurBoutonAppliquer implements MouseListener
 
     /**
      *Constructeur prenant un plugin en parametre
-     * @param pl Plugin utilisé
+     * @param pl Plugin utilise
      */
     public EcouteurBoutonAppliquer(Plugin  pl)
     {
@@ -25,7 +25,7 @@ public class EcouteurBoutonAppliquer implements MouseListener
 
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtn(Boolean enter)

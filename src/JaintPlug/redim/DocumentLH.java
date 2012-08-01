@@ -24,8 +24,8 @@ public class DocumentLH extends PlainDocument
 
     /**
      *
-     * @param re Instance de la fenêtre de redimensionnement
-     * @param courant Le JTextField sur lequel on rajoute l'écouteur
+     * @param re Instance de la fenetre de redimensionnement
+     * @param courant Le JTextField sur lequel on rajoute l'ecouteur
      * @param autre L'autre JTextField
      */
     public DocumentLH(Redimensionnement re, JTextField courant, JTextField autre)
@@ -56,9 +56,9 @@ public class DocumentLH extends PlainDocument
     }
 
     /**
-     * Supprime tous les caractères non numérique de la chaine
-     * @param s Chaine à trier
-     * @return Chaine "numérique"
+     * Supprime tous les caracteres non numerique de la chaine
+     * @param s Chaine a trier
+     * @return Chaine "numerique"
      */
     public String trier(String s)
     {
@@ -114,7 +114,7 @@ public class DocumentLH extends PlainDocument
     }
 
     /**
-     * Pour garder le ratio; dès modification d'un champ, il faut mettre l'autre a jour. Seulement, lorsque l'autre se met a jour il essaye de faire apreil avec le champ courant. Il faut donc tester si le champ a déjà été testé
+     * Pour garder le ratio; des modification d'un champ, il faut mettre l'autre a jour. Seulement, lorsque l'autre se met a jour il essaye de faire apreil avec le champ courant. Il faut donc tester si le champ a deja ete teste
      * @return Renvoi vrai si c'est ce JTextField qu'on est en train de modifier.
      */
     public boolean getFait()

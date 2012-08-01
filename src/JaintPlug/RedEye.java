@@ -187,7 +187,7 @@ public class RedEye implements Plugin
        jd.add(jp,BorderLayout.CENTER);
        JPanel jsp = new JPanel(new BorderLayout());
        JPanel temp = new JPanel();
-       temp.add(new JLabel("Tolérance : "));
+       temp.add(new JLabel("Tolerance : "));
        jsp.add(temp,BorderLayout.NORTH);
        jsp.add(js,BorderLayout.CENTER);
        jd.add(jsp,BorderLayout.SOUTH);

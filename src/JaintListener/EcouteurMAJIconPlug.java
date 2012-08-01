@@ -5,7 +5,7 @@ import Jaint.*;
 import javax.swing.event.*;
 
 /**
- *Mise à jour des icones des plugins
+ *Mise a jour des icones des plugins
  * @author Jonas
  */
 public class EcouteurMAJIconPlug implements ChangeListener

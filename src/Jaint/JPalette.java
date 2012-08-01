@@ -4,7 +4,7 @@ package Jaint;
  * @(#)Text1.java
  *
  *
- * @author Jean-François
+ * @author Jean-Francois
  * @version 1.00 2009/11/5
  */
 
@@ -67,7 +67,7 @@ public class JPalette extends JComponent
    	//dimension de la palette
    	
         /**
-         * Diamètre de la <code>JPalette</code> sans les sous-menus. Vaut le tiers de la heuteur de l'écran
+         * Diametre de la <code>JPalette</code> sans les sous-menus. Vaut le tiers de la heuteur de l'ecran
          */
         public static final int GRAND_DIAM = Toolkit.getDefaultToolkit().getScreenSize().height / 3;
     /**
@@ -76,7 +76,7 @@ public class JPalette extends JComponent
     public static final int GRAND_RAYON = GRAND_DIAM / 2;
     
     /**
-     * Diamètre de la <code>JPalette</code> sans les cercles de couleur
+     * Diametre de la <code>JPalette</code> sans les cercles de couleur
      */
     public static final int MOYEN_DIAM = GRAND_DIAM - (GRAND_DIAM / 20);
     /**
@@ -85,7 +85,7 @@ public class JPalette extends JComponent
     public static final int MOYEN_RAYON = MOYEN_DIAM / 2;
     
     /**
-     * Diamètre du centre de la <code>JPalette</code>
+     * Diametre du centre de la <code>JPalette</code>
      */
     public static final int PETIT_DIAM = GRAND_DIAM - (GRAND_DIAM / 3);
     /**
@@ -94,7 +94,7 @@ public class JPalette extends JComponent
     public static final int PETIT_RAYON = PETIT_DIAM / 2;
     
     /**
-     * Diamètre de la <code>JPalette</code> avec un sous menu d'ouvert
+     * Diametre de la <code>JPalette</code> avec un sous menu d'ouvert
      */
     public static final int DIAM_SUBMENU = GRAND_DIAM + (int)(GRAND_DIAM / 2.5);
     /**
@@ -106,11 +106,11 @@ public class JPalette extends JComponent
    	//coordonn�es du centre du cercle
 	
     /**
-     *  Coordonnée x du centre de la <code>JPalette</code>
+     *  Coordonnee x du centre de la <code>JPalette</code>
      */
     protected int coordX = RAYON_SUBMENU + 1;
     /**
-     * Coordonnée y du centre de la <code>JPalette</code>
+     * Coordonnee y du centre de la <code>JPalette</code>
      */
     protected int coordY = RAYON_SUBMENU + 1;
 
@@ -118,11 +118,11 @@ public class JPalette extends JComponent
     //coordonn�se x et y de la souris
 
     /**
-     * Coordonnée x de la souris dans la <code>JPalette</code>
+     * Coordonnee x de la souris dans la <code>JPalette</code>
      */
     protected int mouseX = coordX;
     /**
-     * Coordonnée y de la souris dans la <code>JPalette</code>
+     * Coordonnee y de la souris dans la <code>JPalette</code>
      */
     protected int mouseY = coordY;
     
@@ -160,7 +160,7 @@ public class JPalette extends JComponent
     
     
     /**
-     * Place la <code>JPalette</code> dans la <code>JFrame</code> passée en argument et placera le premier bouton à droite (angle zéro)
+     * Place la <code>JPalette</code> dans la <code>JFrame</code> passee en argument et placera le premier bouton a droite (angle zero)
      * @param jf La <code>JFrame</code> dans laquelle la <code>JPalette</code> s'affichera
      */
     public JPalette(JFrame jf)
@@ -171,7 +171,7 @@ public class JPalette extends JComponent
     
     /**
      * Place la <code>JPalette</code> dans la <code>JFrame</code>
-     * @param angle Angle du début du premier <code>JPaletteItem</code>
+     * @param angle Angle du debut du premier <code>JPaletteItem</code>
      * @param jf La <code>JFrame</code> dans laquelle la <code>JPalette</code> s'affichera
      */
     public JPalette(int angle, JFrame jf)
@@ -263,7 +263,7 @@ public class JPalette extends JComponent
     }
     
     
-    /*méthodes*/
+    /*methodes*/
     
     
     @Override
@@ -276,7 +276,7 @@ public class JPalette extends JComponent
     	//dessin des sous menus
     	
     	
-    	int depart; // utilisé plusieurs fois dans cette méthode paint
+    	int depart; // utilise plusieurs fois dans cette methode paint
     	
     	   	
     	this.setToolTipText(null);
@@ -298,7 +298,7 @@ public class JPalette extends JComponent
                                         double tailleSubmenu = degreSsBtn * nbSubmenuBtn;
                                         
 
-                                        //tailleNormale équivaut à la taille d'un bouton de la palette
+                                        //tailleNormale equivaut a la taille d'un bouton de la palette
 		    			boolean tailleNormale = (tailleSubmenu < (360 / nbBtn));
 		    			degreSsBtn =  (tailleNormale)? ((360 / nbBtn)/ nbSubmenuBtn) : getDegreSubmenu();
 		    			
@@ -775,8 +775,8 @@ public class JPalette extends JComponent
     
     /**
      * Fonction permettant de calculer la distance d'un point par rapport au centre de la <code>JPalette</code>
-     * @param x coordonnée x
-     * @param y coordonnée y
+     * @param x coordonnee x
+     * @param y coordonnee y
      * @return La distance avec le centre
      */
     public double getR(int x, int y)
@@ -784,7 +784,7 @@ public class JPalette extends JComponent
     	return (Math.sqrt((Math.pow(x, 2) + Math.pow(y, 2))));
     }
    
-    //vérifie si on a changé de zone dans la JPalette
+    //verifie si on a change de zone dans la JPalette
     private boolean changeArea(MouseEvent e)
     {
     	
@@ -963,15 +963,15 @@ public class JPalette extends JComponent
     
     
     @Override
-     public Dimension getPreferredSize()// à redefinir pr afficher le composant
+     public Dimension getPreferredSize()// a redefinir pr afficher le composant
     {
     	return new Dimension(DIAM_SUBMENU + 2, DIAM_SUBMENU + new JLabel("r").getPreferredSize().height + 2);
     }
 
 
     /**
-     * Renvoie la couleur du cercle supérieur
-     * @return Couleur du demi cercle supérieur
+     * Renvoie la couleur du cercle superieur
+     * @return Couleur du demi cercle superieur
      */
     public Color getFirstColor()
      {
@@ -979,8 +979,8 @@ public class JPalette extends JComponent
      }
 
      /**
-      * Renvoie la couleur du cercle inférieur
-      * @return Couleur du demi cercle inférieur
+      * Renvoie la couleur du cercle inferieur
+      * @return Couleur du demi cercle inferieur
       */
      public Color getSecondColor()
      {
@@ -989,7 +989,7 @@ public class JPalette extends JComponent
 
 
      /**
-      * Couleur qui remplace celle du demi cercle supérieur
+      * Couleur qui remplace celle du demi cercle superieur
       * @param color La couleur
       */
      public void setFirstColor(Color color)
@@ -998,7 +998,7 @@ public class JPalette extends JComponent
      }
 
      /**
-      * Couleur qui remplace celle du demi cercle supérieur
+      * Couleur qui remplace celle du demi cercle superieur
       * @param color La couleur
       */
      public void setSecondColor(Color color)
@@ -1007,7 +1007,7 @@ public class JPalette extends JComponent
      }
     
      /**
-      * Permet de récupérer le rayon du centre de la <code>JPalette</code> pour pouvoir dessiner un centre dans une classe fille
+      * Permet de recuperer le rayon du centre de la <code>JPalette</code> pour pouvoir dessiner un centre dans une classe fille
       * @return Le rayon
       */
      public int getPetitRayon()
@@ -1016,8 +1016,8 @@ public class JPalette extends JComponent
     }
     
     /**
-     * Permet de récupérer les coordonnées du centre de la <code>JPalette</code> pour pouvoir dessiner un centre dans une classe fille
-     * @return Les coordonnées
+     * Permet de recuperer les coordonnees du centre de la <code>JPalette</code> pour pouvoir dessiner un centre dans une classe fille
+     * @return Les coordonnees
      */
     public Point getCenterPoint()
     {
@@ -1026,8 +1026,8 @@ public class JPalette extends JComponent
 
 
     /**
-     * Permet de connaître le numéro du <code>JPaletteItem</code> pressé
-     * @return Le numéro
+     * Permet de connaître le numero du <code>JPaletteItem</code> presse
+     * @return Le numero
      */
     public int getSelectedItem()
     {
@@ -1035,7 +1035,7 @@ public class JPalette extends JComponent
     }
 
     /**
-     * Permet de connaître le numéro du <code>SubmenuItem</code> pressé
+     * Permet de connaître le numero du <code>SubmenuItem</code> presse
      * @return
      */
     public int getSelectedSubItem()
@@ -1104,7 +1104,7 @@ public class JPalette extends JComponent
                                                         }
 
 
-                                                        /* Si le sous menu enclenché n'a pas de sous menu
+                                                        /* Si le sous menu enclenche n'a pas de sous menu
                                                          * alors on laisse l'ancien ouvert
                                                          */
 
@@ -1120,8 +1120,8 @@ public class JPalette extends JComponent
                                                         }
                                                         else
                                                         {
-                                                            /* si le bouton enclenché n'avait pas de sous menu
-                                                             * on va remettre "btnEnfonce" à l'état précédent
+                                                            /* si le bouton enclenche n'avait pas de sous menu
+                                                             * on va remettre "btnEnfonce" a l'etat precedent
                                                              * pour cela, on va rechercher dans la liste
                                                              * quel bouton est "ouvert"
                                                              */
@@ -1181,12 +1181,12 @@ public class JPalette extends JComponent
                                            }
                                            catch(IndexOutOfBoundsException ie)
                                            {
-                                               /* Cas où on clique sur le sous bouton désactivé
-                                                * Lorsque c'est le cas, la variable ssBtnEnfonce n'a pas pu se mettre à la valeur de ce sous bouton
-                                                * Lorsque j'affecte la valeur à ce bouton (cf algo lorsque je dessinne les sous boutons)
-                                                * Il faudrait que je teste si ce bouton est désactivé juste avant chaque "drawArc"
+                                               /* Cas où on clique sur le sous bouton desactive
+                                                * Lorsque c'est le cas, la variable ssBtnEnfonce n'a pas pu se mettre a la valeur de ce sous bouton
+                                                * Lorsque j'affecte la valeur a ce bouton (cf algo lorsque je dessinne les sous boutons)
+                                                * Il faudrait que je teste si ce bouton est desactive juste avant chaque "drawArc"
                                                 * A la place, je le fait une fois pour tout un bloc.
-                                                * Du coup, ce try catch est nécessaire
+                                                * Du coup, ce try catch est necessaire
                                                 */
                                            }
 					    
@@ -1242,8 +1242,8 @@ public class JPalette extends JComponent
 	}
 	
      /**
-      * Ajoute un <code>JPaletteItem</code> à la <code>JPaletteItem</code>
-      * @param item Le <code>JPaletteItem</code> à ajouter
+      * Ajoute un <code>JPaletteItem</code> a la <code>JPaletteItem</code>
+      * @param item Le <code>JPaletteItem</code> a ajouter
       */
      public void add(JPaletteItem item)
     {
@@ -1257,7 +1257,7 @@ public class JPalette extends JComponent
          
 
     /**
-     * Active la transparence pour le <code>Graphics2D</code> donné
+     * Active la transparence pour le <code>Graphics2D</code> donne
      * @param g Le <code>Graphics2D</code>
      */
     protected void transparenceOn(Graphics2D g)
@@ -1266,7 +1266,7 @@ public class JPalette extends JComponent
     }
 
     /**
-     * Désactive la transparence pour le <code>Graphics2D</code> donné
+     * Desactive la transparence pour le <code>Graphics2D</code> donne
      * @param g Le <code>Graphics2D</code>
      */
     protected void transparenceOff(Graphics2D g)
@@ -1275,8 +1275,8 @@ public class JPalette extends JComponent
     }
 
     /**
-     * Teste si une autre <code>JPalette</code> est déjà affichée dans la <code>JFrame</code>
-     * @return Le résultat du test
+     * Teste si une autre <code>JPalette</code> est deja affichee dans la <code>JFrame</code>
+     * @return Le resultat du test
      */
     public boolean anotherPaletteDisplayed()
     {
@@ -1284,7 +1284,7 @@ public class JPalette extends JComponent
     }
 
     /**
-     * A utiliser lorsqu'on rend la <code>JPalette</code> visible ou invisible. Permet d'empêcher que plusieurs <code>JPalette</code> ne s'affichent en même temps dans la même <code>JFrame</code>
+     * A utiliser lorsqu'on rend la <code>JPalette</code> visible ou invisible. Permet d'empecher que plusieurs <code>JPalette</code> ne s'affichent en meme temps dans la meme <code>JFrame</code>
      * @param display Vrai si setVisible(true), faux sinon
      */
     public void setState(boolean display)
@@ -1294,7 +1294,7 @@ public class JPalette extends JComponent
 
 
     /**
-     * Permet de récupérer la couleur des <code>JPaletteItem</code>
+     * Permet de recuperer la couleur des <code>JPaletteItem</code>
      * @return La couleur
      */
     @SuppressWarnings("unused")
@@ -1316,17 +1316,17 @@ public class JPalette extends JComponent
 
         btnColor = new Color(rouge, vert, bleu);
 
-        // on modifie la saturation et la luminosté pour avoir une couleur plus claire dans la même teinte
+        // on modifie la saturation et la luminoste pour avoir une couleur plus claire dans la meme teinte
         // C'est la couleur que j'utilise lorsqu'on passe sur un bouton
         float[] hsb = Color.RGBtoHSB(rouge, vert, bleu, null);
         hsb[1] = 1;//modification de la saturation
-        hsb[2] = 1;//modification de la luminosité
+        hsb[2] = 1;//modification de la luminosite
 
-        // on crée la nouvelle couleur avec un autre taux de HSB et on l'affecte à couleurEnfonce
+        // on cree la nouvelle couleur avec un autre taux de HSB et on l'affecte a couleurEnfonce
         couleurPassage = new Color(Color.HSBtoRGB(hsb[0], hsb[1], hsb[2]));
 
 
-        //on modifie encore la luminosité pour avoir une couleur plus foncée lorsqu'on clic sur le bouton
+        //on modifie encore la luminosite pour avoir une couleur plus foncee lorsqu'on clic sur le bouton
         hsb[2] = 50;
 
         couleurEnfonce = new Color(Color.HSBtoRGB(hsb[0], hsb[1], hsb[2]));
@@ -1336,9 +1336,9 @@ public class JPalette extends JComponent
     }
 
     /**
-     * Calcule la dimension d'un carré en connaissant son hypothénuse
-     * @param hypothenuse L'hypothénuse
-     * @return La dimension des deux autres côté du carré
+     * Calcule la dimension d'un carre en connaissant son hypothenuse
+     * @param hypothenuse L'hypothenuse
+     * @return La dimension des deux autres cote du carre
      */
     protected Dimension pythagore(int hypothenuse)
     {
@@ -1358,7 +1358,7 @@ public class JPalette extends JComponent
     }
 
     /**
-     * Renvoie le <code>JPaletteItem</code> à l'index passée en argument (premier indice à 0)
+     * Renvoie le <code>JPaletteItem</code> a l'index passee en argument (premier indice a 0)
      * @param index Indice du <code>JPaletteItem</code>
      * @return Le <code>JPaletteItem</code>
      */
@@ -1368,7 +1368,7 @@ public class JPalette extends JComponent
     }
 
     /**
-     * Renvoie l'indice du <code>JPaletteItem</code> qui a été pressé
+     * Renvoie l'indice du <code>JPaletteItem</code> qui a ete presse
      * @return L'indice
      */
     public int getBtnEnfonce()
@@ -1389,7 +1389,7 @@ public class JPalette extends JComponent
 
     /**
      * Renvoie la taille du contour d'un sous menu de la <code>JPalette</code>
-     * @return La taille en degré
+     * @return La taille en degre
      */
     public static double getDegreSubmenu()
     {

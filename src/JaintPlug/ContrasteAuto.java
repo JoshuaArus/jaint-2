@@ -21,7 +21,7 @@ public class ContrasteAuto implements Plugin
 
     public String getDescri()
     {
-        return "Amélioration automatique du contraste pour les images trop sombres ou trop claires";
+        return "Amelioration automatique du contraste pour les images trop sombres ou trop claires";
     }
 
     public boolean isEnabled()

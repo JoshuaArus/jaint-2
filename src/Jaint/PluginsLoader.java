@@ -50,8 +50,8 @@ public class PluginsLoader
 
   
     /**
-     * Ajoute le plugin plug à la liste listPluginActif
-     * @param plug Plugin à ajouter à la liste
+     * Ajoute le plugin plug a la liste listPluginActif
+     * @param plug Plugin a ajouter a la liste
      */
     public void addListPluginActif(Plugin plug)
     {
@@ -72,18 +72,18 @@ public class PluginsLoader
  
     /**
      * Methode qui copie le fichier du plugins vers le dossier ./plugins du logiciel et dans le dossier contenant les .class
-     * @param plug  Plugin à ajouter
+     * @param plug  Plugin a ajouter
      * @throws WrongPluginException
      */
     public void addPlugin(File plug) throws WrongPluginException
     {
         boolean estPresent = false;
         int i = 0;
-        FileChannel source = null; // canal d'entrée
+        FileChannel source = null; // canal d'entree
         FileChannel destination = null; // canal de sortie
         FileChannel destination2 = null; //canal de sortie2
-        String absolute_path = plug.getAbsolutePath(); // On récupère le chemin du plugin
-        String pathPlug = System.getProperty("user.dir" ); // On récupère le chemin du dossier du projet
+        String absolute_path = plug.getAbsolutePath(); // On recupere le chemin du plugin
+        String pathPlug = System.getProperty("user.dir" ); // On recupere le chemin du dossier du projet
 
         try
         {
@@ -95,19 +95,19 @@ public class PluginsLoader
                 {
                 
                     
-                    //si le plugin que l'on importe dans jaint est déja dans la liste
+                    //si le plugin que l'on importe dans jaint est deja dans la liste
                     if(plug.getName().equals(this.listClass.get(i)+".class"))
                     {
-                        //On affiche un méssage d'information
+                        //On affiche un message d'information
                         estPresent = true;
-                        JOptionPane.showMessageDialog(null, "Le plugin "+plug.getName()+" est déjà dans Jaint",plug.getName(), JOptionPane.INFORMATION_MESSAGE,new ImageIcon("./lib/Icons/Plugins/plugin.png"));
+                        JOptionPane.showMessageDialog(null, "Le plugin "+plug.getName()+" est deja dans Jaint",plug.getName(), JOptionPane.INFORMATION_MESSAGE,new ImageIcon("./lib/Icons/Plugins/plugin.png"));
 
                     }
 
                     i++;
                 }
 
-                //On ajoute dans les dossier contenant les .class seulement si le plugin n'est pas encore présent
+                //On ajoute dans les dossier contenant les .class seulement si le plugin n'est pas encore present
                 if(!estPresent)
                 {
                     

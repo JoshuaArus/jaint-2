@@ -79,10 +79,10 @@ public class NumberDoc extends PlainDocument
         int i = 0;
         
 
-        while(i < str.length() && chiffre )//tant que la longueur n'est pas atteinte et que le caractère courant est une lettre alors
+        while(i < str.length() && chiffre )//tant que la longueur n'est pas atteinte et que le caractere courant est une lettre alors
         {
             
-            chiffre = Character.isDigit(str.charAt(i)); // Vrai si le caractère est un chiffre
+            chiffre = Character.isDigit(str.charAt(i)); // Vrai si le caractere est un chiffre
             i++;
         }
        

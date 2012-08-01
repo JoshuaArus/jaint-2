@@ -11,7 +11,7 @@ import java.util.Observer;
 import javax.swing.*;
 
 /**
- * Composant principal. Contient l'image à afficher et les bordures avec les icones permettant la rotation libre
+ * Composant principal. Contient l'image a afficher et les bordures avec les icones permettant la rotation libre
  * @author Joshua
  */
 public class MainComponent extends JScrollPane implements Observer
@@ -33,7 +33,7 @@ public class MainComponent extends JScrollPane implements Observer
 
     /**
      * Renvoi une instance de <code>MainComponent</code>
-     * @param pic L'image à afficher
+     * @param pic L'image a afficher
      * @param ihm Le composant parent
      */
     public MainComponent(Pictimage pic, IHM ihm)
@@ -91,7 +91,7 @@ public class MainComponent extends JScrollPane implements Observer
     }
 
     /**
-     * Permet de récuperer l'image contenu dans l'instance
+     * Permet de recuperer l'image contenu dans l'instance
      * @return L'image sous forme de <code>BufferedImage</code>
      */
     public BufferedImage getBufferedImage()
@@ -100,8 +100,8 @@ public class MainComponent extends JScrollPane implements Observer
     }
 
     /**
-     * Permet de changer l'image affichée
-     * @param img Nouvelle image à afficher
+     * Permet de changer l'image affichee
+     * @param img Nouvelle image a afficher
      */
     public void setBufferedImage(BufferedImage img)
     {
@@ -109,7 +109,7 @@ public class MainComponent extends JScrollPane implements Observer
     }
 
     /**
-     * Fonction permettant d'ajoute les écouteurs sur les icones de rotation libre (MouseListener)
+     * Fonction permettant d'ajoute les ecouteurs sur les icones de rotation libre (MouseListener)
      */
     public void initListener()
     {

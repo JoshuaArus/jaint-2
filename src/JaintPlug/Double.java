@@ -24,7 +24,7 @@ public class Double implements Plugin
 
     public String getDescri()
     {
-            return("Les traits de l'image sont doublés");
+            return("Les traits de l'image sont doubles");
     }
 
     public boolean isEnabled()
@@ -69,9 +69,9 @@ public class Double implements Plugin
     
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage img)
     {
@@ -83,7 +83,7 @@ public class Double implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public int getNbApplyPlug()

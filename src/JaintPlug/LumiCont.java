@@ -77,7 +77,7 @@ public class LumiCont implements Plugin
 
     public String getDescri()
     {
-        return("Permet de regler la luminosité et le contraste de l'image");
+        return("Permet de regler la luminosite et le contraste de l'image");
     }
 
     public boolean isEnabled()
@@ -101,9 +101,9 @@ public class LumiCont implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -144,9 +144,9 @@ public class LumiCont implements Plugin
     
 
     /**
-     * Applique les différents effets à l'image courante et renvoie l'image modifié
+     * Applique les differents effets a l'image courante et renvoie l'image modifie
      * @param img image courante
-     * @return imgModif image modifiée
+     * @return imgModif image modifiee
      */
     public BufferedImage applyEffect(BufferedImage img)
     {
@@ -185,7 +185,7 @@ public class LumiCont implements Plugin
         Image mini;
         BufferedImage miniBi;
 
-        this.jd = new JDialog(JFrame.getFrames()[0], "Luminosité / Contraste", true);
+        this.jd = new JDialog(JFrame.getFrames()[0], "Luminosite / Contraste", true);
         this.jpImage = new JPanel(new GridLayout(3,3));
         this.jpPrincipal = new JPanel(new BorderLayout());
 
@@ -224,7 +224,7 @@ public class LumiCont implements Plugin
 
         miniBi = Pictimage.toBufferedImage(mini);
 
-        //Création des miniatures
+        //Creation des miniatures
         this.biOri = miniBi;
         this.bicl = applyContMoins(applyLumiMoins(miniBi));
         this.bil = applyLumiMoins(miniBi);
@@ -328,9 +328,9 @@ public class LumiCont implements Plugin
      }
 
     /**
-     * Augmente la luminosité de l'image passée en parametre
-     * @param img image à modifier
-     * @return img modifiée
+     * Augmente la luminosite de l'image passee en parametre
+     * @param img image a modifier
+     * @return img modifiee
      */
     public BufferedImage applyLumiPlus(BufferedImage img)
      {
@@ -395,9 +395,9 @@ public class LumiCont implements Plugin
      }
 
       /**
-     * Diminue la luminosité de l'image passée en parametre
-     * @param img image à modifier
-     * @return img modifiée
+     * Diminue la luminosite de l'image passee en parametre
+     * @param img image a modifier
+     * @return img modifiee
      */
      public BufferedImage applyLumiMoins(BufferedImage img)
      {
@@ -463,9 +463,9 @@ public class LumiCont implements Plugin
      }
 
       /**
-     * Augmente le contraste de l'image passée en parametre
-     * @param img image à modifier
-     * @return img modifiée
+     * Augmente le contraste de l'image passee en parametre
+     * @param img image a modifier
+     * @return img modifiee
      */
      public BufferedImage applyContPlus(BufferedImage img)
      {
@@ -533,9 +533,9 @@ public class LumiCont implements Plugin
      }
 
      /**
-     * Diminue le contraste de l'image passée en parametre
-     * @param img image à modifier
-     * @return img modifiée
+     * Diminue le contraste de l'image passee en parametre
+     * @param img image a modifier
+     * @return img modifiee
      */
      public BufferedImage applyContMoins(BufferedImage img)
      {
@@ -604,7 +604,7 @@ public class LumiCont implements Plugin
      }
 
      /**
-      * Prévisualisation de luminosité plus
+      * Previsualisation de luminosite plus
       */
      public void previsualiserLumiPlus()
     {
@@ -632,7 +632,7 @@ public class LumiCont implements Plugin
     }
 
     /**
-     *Prévisualisation de luminosité Moins
+     *Previsualisation de luminosite Moins
      */
     public void previsualiserLumiMoins()
     {
@@ -661,7 +661,7 @@ public class LumiCont implements Plugin
     }
 
     /**
-     * Prévisualisation contraste plus
+     * Previsualisation contraste plus
      */
     public void previsualiserContPlus()
     {
@@ -689,7 +689,7 @@ public class LumiCont implements Plugin
     }
 
     /**
-     * Prévisualisation contraste moins
+     * Previsualisation contraste moins
      */
     public void previsualiserContMoins()
     {
@@ -718,7 +718,7 @@ public class LumiCont implements Plugin
     }
 
     /**
-     * Mise a jour des boutons contenant représentant  les neuf miniatures
+     * Mise a jour des boutons contenant representant  les neuf miniatures
      */
     public void MajBtn()
     {
@@ -734,7 +734,7 @@ public class LumiCont implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

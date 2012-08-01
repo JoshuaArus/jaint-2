@@ -23,8 +23,8 @@ public class BtnPluginListener implements ActionListener
     private IHM ihm;
 
     /**
-     * Construit l'écouteur
-     * @param p Plugin selectionné
+     * Construit l'ecouteur
+     * @param p Plugin selectionne
      * @param i IHM courante
      */
     public BtnPluginListener(int p, IHM i)

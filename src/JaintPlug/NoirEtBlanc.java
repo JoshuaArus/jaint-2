@@ -76,9 +76,9 @@ public class NoirEtBlanc implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -118,9 +118,9 @@ public class NoirEtBlanc implements Plugin
     }
 
    /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage img)
     {
@@ -288,10 +288,10 @@ public class NoirEtBlanc implements Plugin
 
 
     /**
-    *	Méthode comparant deux couleurs avec une certaine tolérance et retournant un boolean
+    *	Methode comparant deux couleurs avec une certaine tolerance et retournant un boolean
     *
-    *	@param	pixel1		Couleur du premier pixel à comparer
-    *	@param	pixel2		Couleur du deuxieme pixel à comparer
+    *	@param	pixel1		Couleur du premier pixel a comparer
+    *	@param	pixel2		Couleur du deuxieme pixel a comparer
     *	@param	tolerance	Difference tolere entre les deux couleurs pour les declarer identiques
     *	@return	estIdentique	Vrai si les couleurs sont identiques, faux sinon.
     */
@@ -314,11 +314,11 @@ public class NoirEtBlanc implements Plugin
 
     /**
     *
-    *	Compare deux couleurs et retourne la différence qu'il y a entre les deux
+    *	Compare deux couleurs et retourne la difference qu'il y a entre les deux
     *
-    *	@param	pixel1		Couleur du premier pixel à comparer
-    *	@param	pixel2		Couleur du deuxieme pixel à comparer
-    *	@return	difference		Correspond a la différence qu'il y a entre 2couleurs
+    *	@param	pixel1		Couleur du premier pixel a comparer
+    *	@param	pixel2		Couleur du deuxieme pixel a comparer
+    *	@return	difference		Correspond a la difference qu'il y a entre 2couleurs
     */
     public static int difference_couleur( int pixel1, int pixel2 )
     {
@@ -326,15 +326,15 @@ public class NoirEtBlanc implements Plugin
         Color couleur2 = new Color( pixel2 );
 
         int   diff     = Math.abs( couleur1.getRed() - couleur2.getRed() );
-        diff += Math.abs( couleur1.getGreen() - couleur2.getGreen() );		// calcule la différence des trois composantes
+        diff += Math.abs( couleur1.getGreen() - couleur2.getGreen() );		// calcule la difference des trois composantes
         diff += Math.abs( couleur1.getBlue() - couleur2.getBlue() );
 
 
-        return diff / 3;	// retourne la moyenne des différences
+        return diff / 3;	// retourne la moyenne des differences
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

@@ -1,7 +1,7 @@
 package JaintListener;
 
 /**
- * Classe créant la boite de dialogue pour la traduction d'une langue
+ * Classe creant la boite de dialogue pour la traduction d'une langue
  * @author Jeff
  */
 

@@ -11,7 +11,7 @@ import java.awt.geom.Ellipse2D;
 import javax.swing.ImageIcon;
 
 /**
- * Classe créant un objet comme <code>JaintPalette</code> mais avec des caractéristiques différentes
+ * Classe creant un objet comme <code>JaintPalette</code> mais avec des caracteristiques differentes
  * @author Jeff
  */
 public class JaintPalette2 extends JPalette
@@ -35,15 +35,15 @@ public class JaintPalette2 extends JPalette
     private int typePalette;
     private JaintPalette2 palette;
 
-    //vrai si la palette s'est redessiné lors d'un clic droit
+    //vrai si la palette s'est redessine lors d'un clic droit
     private boolean dessinClic = false;
     
 
     /**
      * Construit la palette
-     * @param angle Angle du début du premier JPaletteItem
+     * @param angle Angle du debut du premier JPaletteItem
      * @param img Chemin de l'image du centre
-     * @param img2 Chemin de la deuxième image du centre
+     * @param img2 Chemin de la deuxieme image du centre
      * @param i IHM principale
      * @param type Type de palette (GESTION ou OPTION)
      */
@@ -119,7 +119,7 @@ public class JaintPalette2 extends JPalette
     }
 
     /**
-     * Indique la palette qui permet d'être affiché en cliquant sur le centre
+     * Indique la palette qui permet d'etre affiche en cliquant sur le centre
      * @param jp La palette
      */
     public void addPalette(JaintPalette2 jp)

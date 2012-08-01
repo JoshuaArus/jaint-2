@@ -9,7 +9,7 @@ import javax.swing.JSpinner;
 import javax.swing.border.Border;
 
 /**
- * Classe permettant de mettre à jour les informations de la JPalette lorsqu'on des boutons de couleur est pressé
+ * Classe permettant de mettre a jour les informations de la JPalette lorsqu'on des boutons de couleur est presse
  * @author Jeff
  */
 public class EcouteurBtnCouleur implements ActionListener

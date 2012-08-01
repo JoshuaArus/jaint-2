@@ -6,7 +6,7 @@ import java.awt.Point;
 import java.awt.image.BufferedImage;
 
 /**
- * Classe servant à stocker temporairement une image. Utilisé pour les fonction couper, copier, coller et rogner
+ * Classe servant a stocker temporairement une image. Utilise pour les fonction couper, copier, coller et rogner
  * @author Joshua
  */
 public class Calque
@@ -18,8 +18,8 @@ public class Calque
 
     /**
      * Renvoi une nouvelle instance de type <code>Calque</code>
-     * @param picture L'image à stocker temporairement (peut être null à la création du composant)
-     * @param origine Coordonnées du point 0,0 de l'image temporaire sur l'arriere plan
+     * @param picture L'image a stocker temporairement (peut etre null a la creation du composant)
+     * @param origine Coordonnees du point 0,0 de l'image temporaire sur l'arriere plan
      */
     public Calque(BufferedImage picture, Point origine)
     {
@@ -28,8 +28,8 @@ public class Calque
     }
 
     /**
-     * Sert à placer l'origine de l'image temporaire par rapport au fond
-     * @param origine Coordonnées du point 0,0 de l'image temporaire sur l'arriere plan
+     * Sert a placer l'origine de l'image temporaire par rapport au fond
+     * @param origine Coordonnees du point 0,0 de l'image temporaire sur l'arriere plan
      */
     public void setOrigine(Point origine) {
         this.origine = origine;
@@ -47,16 +47,16 @@ public class Calque
     }
 
     /**
-     * Récupere les coordonnées de l'origine du calque
-     * @return Le point correspondant à l'origine du calque sur l'image de fond
+     * Recupere les coordonnees de l'origine du calque
+     * @return Le point correspondant a l'origine du calque sur l'image de fond
      */
     public Point getOrigine() {
         return new Point(origine);
     }
 
     /**
-     * Retourne l'image stockée
-     * @return L'image stockée
+     * Retourne l'image stockee
+     * @return L'image stockee
      */
     public BufferedImage getBufferedImage()
     {
@@ -64,23 +64,23 @@ public class Calque
     }
 
     /**
-     * Retourne la taille de l'image stockée
-     * @return Taille de l'image stockée
+     * Retourne la taille de l'image stockee
+     * @return Taille de l'image stockee
      */
     public Dimension getSize() {
         return new Dimension(size);
     }
 
     /**
-     * Retourne l'état du calque (activé ou non)
-     * @return Booléen de l'état du calque
+     * Retourne l'etat du calque (active ou non)
+     * @return Booleen de l'etat du calque
      */
     public boolean isEnabled() {
         return enabled;
     }
 
     /**
-     * Changer l'état du calque
+     * Changer l'etat du calque
      * @param enabled Vrai ou Faux
      */
     public void setEnabled(boolean enabled) {

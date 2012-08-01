@@ -75,7 +75,7 @@ public class Imprimante implements Printable
 	}
 
         /**
-         * Permet de créer directement une impression
+         * Permet de creer directement une impression
          * @param ihm
          */
         public static void print(IHM ihm)

@@ -12,7 +12,7 @@ import javax.swing.*;
 import java.util.ArrayList;
 
 /**
- * Classe contenant une image à afficher
+ * Classe contenant une image a afficher
  * @author Joshua
  */
 public class Pictimage extends JPanel implements Cloneable
@@ -23,7 +23,7 @@ public class Pictimage extends JPanel implements Cloneable
 	private static final long serialVersionUID = -3566561126327499216L;
 	
 	/**
-     * Image à afficher
+     * Image a afficher
      */
     protected ArrayList<BufferedImage> calques = new ArrayList<BufferedImage>();
 	//protected BufferedImage picture;
@@ -42,8 +42,8 @@ public class Pictimage extends JPanel implements Cloneable
 
     /**
      *
-     * @param img Image à afficher
-     * @param path Chemin d'accès du fichier
+     * @param img Image a afficher
+     * @param path Chemin d'acces du fichier
      */
 
     public Pictimage(Image img,String path)
@@ -62,7 +62,7 @@ public class Pictimage extends JPanel implements Cloneable
 
     /**
      *
-     * @param path Chemin d'accès du fichier
+     * @param path Chemin d'acces du fichier
      * @throws IOException 
      */
     public Pictimage(String path) throws IOException
@@ -71,7 +71,7 @@ public class Pictimage extends JPanel implements Cloneable
     }
 
     /**
-     * Renvoi la taille de l'image affichée
+     * Renvoi la taille de l'image affichee
      * @return Dimension de l'image
      */
     @Override
@@ -81,8 +81,8 @@ public class Pictimage extends JPanel implements Cloneable
     }
 
     /**
-     * Renvoi le chemin d'accès du fichier correspondant à cette image (null si il n'est pas spécifié)
-     * @return Chemin d'accès
+     * Renvoi le chemin d'acces du fichier correspondant a cette image (null si il n'est pas specifie)
+     * @return Chemin d'acces
      */
     public String getPath()
     {
@@ -93,8 +93,8 @@ public class Pictimage extends JPanel implements Cloneable
     }
 
     /**
-     * Définir le chemin d'accès de l'image
-     * @param path Chemin d'accès
+     * Definir le chemin d'acces de l'image
+     * @param path Chemin d'acces
      */
     public void setPath(String path)
     {
@@ -102,7 +102,7 @@ public class Pictimage extends JPanel implements Cloneable
     }
 
     /**
-     * Renvoi une copie de l'image affichée
+     * Renvoi une copie de l'image affichee
      * @return Nouvelle BufferedImage
      */
     public BufferedImage getBufferedImage()
@@ -119,8 +119,8 @@ public class Pictimage extends JPanel implements Cloneable
 
 
     /**
-     * Spécifier l'image à afficher
-     * @param bi Image à afficher
+     * Specifier l'image a afficher
+     * @param bi Image a afficher
      */
     public void setBufferedImage(BufferedImage bi)
     {
@@ -133,8 +133,8 @@ public class Pictimage extends JPanel implements Cloneable
     }
 
     /**
-     * Specifier l'image à afficher et son type
-     * @param bi Image à afficher
+     * Specifier l'image a afficher et son type
+     * @param bi Image a afficher
      * @param typeImage Type de l'image (cf types de BufferedImage)
      */
     public void setBufferedImage(Image bi, int typeImage)
@@ -154,7 +154,7 @@ public class Pictimage extends JPanel implements Cloneable
 
     /**
      * Definit automatiquement le type de l'image selon son extension
-     * @param path Chemin d'accès ou nom du fichier
+     * @param path Chemin d'acces ou nom du fichier
      */
     public void findType(String path)
     {
@@ -221,22 +221,22 @@ public class Pictimage extends JPanel implements Cloneable
 
     /**
      * Convertit une <code>Image</code> en <code>BufferedImage</code>
-     * @param image Image à convertir
-     * @return Nouvelle BufferedImage correspondant à l'image passée en paramètre
+     * @param image Image a convertir
+     * @return Nouvelle BufferedImage correspondant a l'image passee en parametre
      */
     public static BufferedImage toBufferedImage(Image image)
     {
-        /** On test si l'image n'est pas déja une instance de BufferedImage */
+        /** On test si l'image n'est pas deja une instance de BufferedImage */
         if( image instanceof BufferedImage )
         {
                 return( (BufferedImage)image );
         }
         else
         {
-                /** On s'assure que l'image est complètement chargée */
+                /** On s'assure que l'image est completement chargee */
                 image = new ImageIcon(image).getImage();
 
-                /** On crée la nouvelle image */
+                /** On cree la nouvelle image */
                 BufferedImage bufferedImage = new BufferedImage(
                             image.getWidth(null),
                             image.getHeight(null),

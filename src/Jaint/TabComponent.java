@@ -7,7 +7,7 @@ import javax.swing.*;
 import java.util.*;
 
 /**
- * Composant placé dans les onglets de l'interface principale
+ * Composant place dans les onglets de l'interface principale
  * @author Joshua
  */
 public class TabComponent extends JPanel implements Observer
@@ -29,9 +29,9 @@ public class TabComponent extends JPanel implements Observer
 
     /**
      *
-     * @param picture Image à afficher
-     * @param display_name Nom à afficher en dessous de l'image
-     * @param ihm Référence vers l'interface principale
+     * @param picture Image a afficher
+     * @param display_name Nom a afficher en dessous de l'image
+     * @param ihm Reference vers l'interface principale
      */
     public TabComponent(Pictimage picture, String display_name,IHM ihm)
     {
@@ -77,7 +77,7 @@ public class TabComponent extends JPanel implements Observer
     }
     
     /**
-     * Renvoi la chaine affichée en dessous de l'image
+     * Renvoi la chaine affichee en dessous de l'image
      * @return Nom de l'image
      */
     public String getLabel()
@@ -86,8 +86,8 @@ public class TabComponent extends JPanel implements Observer
     }
 
     /**
-     * Définit la chaint affichée en dessous de l'image
-     * @param s Nom à utiliser
+     * Definit la chaint affichee en dessous de l'image
+     * @param s Nom a utiliser
      */
     public void setLabel(String s)
     {
@@ -109,8 +109,8 @@ public class TabComponent extends JPanel implements Observer
     }
 
     /**
-     * Renvoi l'image affichée dans l'onglet
-     * @return L'image affichée
+     * Renvoi l'image affichee dans l'onglet
+     * @return L'image affichee
      */
     public Pictimage getPictimage()
     {
@@ -118,8 +118,8 @@ public class TabComponent extends JPanel implements Observer
     }
 
     /**
-     * Définit le ratio pour le redimensionnement de l'image afin de rester dans les limites de l'onglet
-     * @param picture Image à afficher
+     * Definit le ratio pour le redimensionnement de l'image afin de rester dans les limites de l'onglet
+     * @param picture Image a afficher
      */
     public void setRatio(Pictimage picture)
     {

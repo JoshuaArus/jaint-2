@@ -1,7 +1,7 @@
 package JaintListener;
 
 /**
- * Classe permettant d'afficher la liste de mots d'avant à traduire.
+ * Classe permettant d'afficher la liste de mots d'avant a traduire.
  * @author Jeff
  */
 

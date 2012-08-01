@@ -13,7 +13,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JSpinner;
 
 /**
- * Classe mettant un jour la couleur sélectionnée dans le sélecteur de couleur
+ * Classe mettant un jour la couleur selectionnee dans le selecteur de couleur
  * @author Jeff
  */
 public class EcouteurChangementCouleur extends MouseAdapter

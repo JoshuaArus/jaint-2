@@ -30,15 +30,15 @@ public class Jaint extends Observable
      */
     public ArrayList<ArrayList<Pictimage>> lst_pict = new ArrayList<ArrayList<Pictimage>>();
     /**
-     * Liste contenant pour chaque onglet la position de l'image courante dans <code>lst_pict</code> (utilisée pour le undo/redo)
+     * Liste contenant pour chaque onglet la position de l'image courante dans <code>lst_pict</code> (utilisee pour le undo/redo)
      */
     public ArrayList<Integer> lst_pos = new ArrayList<Integer>();
     /**
-     * Calque contenant l'image stockée temporairement suite à l'action "couper"
+     * Calque contenant l'image stockee temporairement suite a l'action "couper"
      */
     public Calque cut = new Calque(null, new Point(0,0));
     /**
-     * Calque contenant l'image stockée temporairement suite à l'action "copier"
+     * Calque contenant l'image stockee temporairement suite a l'action "copier"
      */
     public Calque copy = new Calque(null, new Point(0,0));
     /**
@@ -88,7 +88,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Simple point d'entrée du logiciel, appel imédiat au constructeur <code>Jaint</code>
+     * Simple point d'entree du logiciel, appel imediat au constructeur <code>Jaint</code>
      * @param args
      */
     public static void main(String[] args)
@@ -137,8 +137,8 @@ public class Jaint extends Observable
     }
 
     /**
-     * Stock l'image passée en paramètre dans l'historique (<code>lst_pict</code>) et met à jour la miniature de l'onglet, les miniatures du sous menu des plugin et l'image de la zone principale
-     * @param bi Image à stocker
+     * Stock l'image passee en parametre dans l'historique (<code>lst_pict</code>) et met a jour la miniature de l'onglet, les miniatures du sous menu des plugin et l'image de la zone principale
+     * @param bi Image a stocker
      */
     public void applyEffect(BufferedImage bi)
     {
@@ -150,17 +150,17 @@ public class Jaint extends Observable
         {
             if (lst.get(currentPos+1) == null)
             {
-                //on essaye de faire un set (changer), si une image existait elle est remplacée, sinon, IndexOutOfBoundsException, donc on va dans le catch
+                //on essaye de faire un set (changer), si une image existait elle est remplacee, sinon, IndexOutOfBoundsException, donc on va dans le catch
             }
             else
             {
                 lst.set(currentPos + 1, new Pictimage(bi,lst.get(currentPos).getPath()));
 
-                int nouveau = currentPos + 1;//on récupere l'emplacement de l'image suivante (si elle existe)
+                int nouveau = currentPos + 1;//on recupere l'emplacement de l'image suivante (si elle existe)
 
                 while(lst.size() > nouveau)
                 {
-                    lst.remove(nouveau+1);//on met a null toutes les images qui suivent l'image actuelle (histoire de bien gérer l'historique)
+                    lst.remove(nouveau+1);//on met a null toutes les images qui suivent l'image actuelle (histoire de bien gerer l'historique)
                 }
             }
         }
@@ -182,7 +182,7 @@ public class Jaint extends Observable
     }
 
      /**
-     * Permet d'ouvrir un gestionnaire de fichier pour ouvrir une ou plusieurs images et rajoute les éléments séléctionnés à l'IHM
+     * Permet d'ouvrir un gestionnaire de fichier pour ouvrir une ou plusieurs images et rajoute les elements selectionnes a l'IHM
      */
     public void ouvrir()
     {
@@ -196,9 +196,9 @@ public class Jaint extends Observable
 
         for (File file : files)
         {
-            if (res == JFileChooser.APPROVE_OPTION && JFC_chooser.accept(file))//si l'utilisateur a bien cliqué sur enregistrer et qu'il est de la bonne extension
+            if (res == JFileChooser.APPROVE_OPTION && JFC_chooser.accept(file))//si l'utilisateur a bien clique sur enregistrer et qu'il est de la bonne extension
             {    
-				String myFile = new String(file.toString());// Récupérer le nom du fichier qu’il a spécifié
+				String myFile = new String(file.toString());// Recuperer le nom du fichier qu’il a specifie
 				ihm.addTab(myFile);
             }
         }
@@ -217,7 +217,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Permet d'enregistrer l'image courante. Si aucun fichier de destination n'est spécifié, on effectue l'appel à la fonction enregistrer()
+     * Permet d'enregistrer l'image courante. Si aucun fichier de destination n'est specifie, on effectue l'appel a la fonction enregistrer()
      */
     public void enregistrer()
     {
@@ -235,7 +235,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Permet de faire la même chose que enregistrerSous() mais en spécifiant l'onglet à considérer
+     * Permet de faire la meme chose que enregistrerSous() mais en specifiant l'onglet a considerer
      * @param index Index de l'onglet a enregistrer
      */
     public void enregistrerSous(int index)
@@ -250,7 +250,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Permet d'enregistrer un onglet en particulier en spécifiant le fichier de destination
+     * Permet d'enregistrer un onglet en particulier en specifiant le fichier de destination
      * @param index Index de l'onglet a sauvegarder
      * @param file Fichier de destination
      */
@@ -302,7 +302,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Annule une action réalisée
+     * Annule une action realisee
      */
     public void undo()
     {
@@ -336,7 +336,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Réapplique une action déjà annulée
+     * Reapplique une action deja annulee
      */
     public void redo()
     {
@@ -409,7 +409,7 @@ public class Jaint extends Observable
      *Methode de creation des icones des plugins
      * @param index index du plugin dans la liste des plugins
      * @param icon miniature de l'image courante m
-     * @return icon miniature de l'image courante modifiée par l'effet du plugin
+     * @return icon miniature de l'image courante modifiee par l'effet du plugin
      */
     public BufferedImage createIconPlug(int index, BufferedImage icon)
     {
@@ -437,7 +437,7 @@ public class Jaint extends Observable
     }
 
     /**
-     * Fonction appelée lorsqu'on ferme la fenêtre. Elle verifie si il y a des onglets non enregistrer et si tel est le cas, propose de les enregistrer
+     * Fonction appelee lorsqu'on ferme la fenetre. Elle verifie si il y a des onglets non enregistrer et si tel est le cas, propose de les enregistrer
      */
     public void quitter()
     {

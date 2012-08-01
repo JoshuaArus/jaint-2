@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Classe mettant à jour le centre de la palette lorsque la pipette est sélectionnée
+ * Classe mettant a jour le centre de la palette lorsque la pipette est selectionnee
  * @author Jeff
  */
 public class EcouteurPipette implements ActionListener

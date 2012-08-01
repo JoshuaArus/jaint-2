@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Classe permettant d'activer le centre des formes géométriques dans la JaintPalette
+ * Classe permettant d'activer le centre des formes geometriques dans la JaintPalette
  * @author Jeff
  */
 public class EcouteurForm implements ActionListener

@@ -58,12 +58,12 @@ public class PeintureHuile implements Plugin
 
     public String getName()
     {
-        return("Peinture à l'huile");
+        return("Peinture a l'huile");
     }
 
     public String getDescri()
     {
-        return("Permet de creer une peinture à l'huile à partir de l'image");
+        return("Permet de creer une peinture a l'huile a partir de l'image");
     }
 
     public boolean isEnabled()
@@ -77,7 +77,7 @@ public class PeintureHuile implements Plugin
     }
 
     /**
-     *Recupere l'intensité renvoyé par le slide
+     *Recupere l'intensite renvoye par le slide
      */
     public void setJsIntValue()
     {
@@ -85,7 +85,7 @@ public class PeintureHuile implements Plugin
     }
 
     /**
-     * Recupere le rayon renvoyé par le slider
+     * Recupere le rayon renvoye par le slider
      */
     public void setJsRayValue()
     {
@@ -93,9 +93,9 @@ public class PeintureHuile implements Plugin
     }
 
    /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -149,7 +149,7 @@ public class PeintureHuile implements Plugin
 
 
 
-        this.jd = new JDialog(JFrame.getFrames()[0], "Peinture à l'huile", true);
+        this.jd = new JDialog(JFrame.getFrames()[0], "Peinture a l'huile", true);
         
 
         this.jp = new JPanel(new BorderLayout());
@@ -178,7 +178,7 @@ public class PeintureHuile implements Plugin
         this.jpSlider.add(this.jpSliderRay, BorderLayout.NORTH);
         this.jpSlider.add(this.jpSliderInt, BorderLayout.SOUTH);
 
-        /*Ajout de l'image réduite dans le panel nord*/
+        /*Ajout de l'image reduite dans le panel nord*/
         int width = img.getWidth();
         int height = img.getHeight();
 
@@ -250,9 +250,9 @@ public class PeintureHuile implements Plugin
     }
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage img)
     {
@@ -312,11 +312,11 @@ public class PeintureHuile implements Plugin
 	}
 	
     /**
-    * Calcul de l'intensité correspondant à une couleur (r, g, b) :<BR>
+    * Calcul de l'intensite correspondant a une couleur (r, g, b) :<BR>
     * i = 0.299*r + 0.587*g + 0.114*b
     *
     * @param rgb Couleur.
-    * @return Intensité.
+    * @return Intensite.
     */
     public static double intensite(int rgb)
     {
@@ -339,7 +339,7 @@ public class PeintureHuile implements Plugin
 
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

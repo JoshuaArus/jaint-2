@@ -48,7 +48,7 @@ public class ChooseLanguage extends JDialog
         private String cheminLang = "./lib/lang/";
 
         /**
-         * Construit le sélecteur de langue
+         * Construit le selecteur de langue
          * @param ih
          */
         public ChooseLanguage(IHM ih)
@@ -121,7 +121,7 @@ public class ChooseLanguage extends JDialog
 	}
 
         /**
-         * Change la langue par défaut du logiciel
+         * Change la langue par defaut du logiciel
          */
         public void languageOk()
 	{

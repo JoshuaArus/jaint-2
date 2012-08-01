@@ -72,7 +72,7 @@ public class TranslateDialog extends JDialog
         private String cheminLang = "./lib/lang/";
 
 	/**
-	*Crée un <code>TranslateDialog</code>
+	*Cree un <code>TranslateDialog</code>
 	*@param parent La <code>Frame</code> qui affiche ce <code>JDialog</code>
 	*@param title Le titre du <code>JDialog</code>
 	*@param modal vrai pour bloquer la <code>JFrame</code> parent, faux sinon
@@ -420,7 +420,7 @@ public class TranslateDialog extends JDialog
 	/**
 	* Renvoie un tableau de <code>String</code> correspondant au code de recherche dans un fichier .lang
 	*<p>
-	*N.B. Si le JTextField est vide, le <code>String</code> du tableau sera remplacé par le texte du label.
+	*N.B. Si le JTextField est vide, le <code>String</code> du tableau sera remplace par le texte du label.
 	*@return Le tableau <code>String</code>
 	*/
 	public String[] getComponentsStrings()
@@ -447,9 +447,9 @@ public class TranslateDialog extends JDialog
 	}
 
 	/**
-	*Crée la langue avec la traduction entrée
+	*Cree la langue avec la traduction entree
 	*<p>
-	*N.B. Le fichier sera crée dans le répertoire "lang"
+	*N.B. Le fichier sera cree dans le repertoire "lang"
          *@param s Tableau de <code>String</code> containing les codes de traduction
          * @throws java.io.IOException
 	*/
@@ -473,7 +473,7 @@ public class TranslateDialog extends JDialog
 	}
 
 	/**
-	* Remplie les JTextFields si la langue a déjà été créee.
+	* Remplie les JTextFields si la langue a deja ete creee.
          *
          * @throws java.io.IOException
          */
@@ -528,7 +528,7 @@ public class TranslateDialog extends JDialog
 	}
 
 	/**
-	*change l'icône du drapeau en fonction de la langue sélectionnée
+	*change l'icone du drapeau en fonction de la langue selectionnee
 	*/
 	public void flagChange()
 	{
@@ -537,7 +537,7 @@ public class TranslateDialog extends JDialog
 	}
 
 	/**
-	* change la liste de termes à traduire avec la précédente
+	* change la liste de termes a traduire avec la precedente
 	*/
 	public void previous()
 	{
@@ -581,7 +581,7 @@ public class TranslateDialog extends JDialog
 	}
 
 	/**
-	*change la liste de termes à traduire avec la suivante
+	*change la liste de termes a traduire avec la suivante
 	*/
 	public void next()
 	{

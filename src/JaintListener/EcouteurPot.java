@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Classe mettant à jour le centre de la palette lorsque le pot de peinture est sélectionnée
+ * Classe mettant a jour le centre de la palette lorsque le pot de peinture est selectionnee
  * @author Jeff
  */
 public class EcouteurPot implements ActionListener

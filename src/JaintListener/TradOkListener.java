@@ -1,7 +1,7 @@
 package JaintListener;
 
 /**
- * Classe lançant le traitement pour traduire la langue lorsque l'utilisateur à cliqué sur OK
+ * Classe lancant le traitement pour traduire la langue lorsque l'utilisateur a clique sur OK
  * @author Jeff
  */
 

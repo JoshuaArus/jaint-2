@@ -82,9 +82,9 @@ public class Rotation implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -159,13 +159,13 @@ public class Rotation implements Plugin
 
         miniBi = Pictimage.toBufferedImage(mini);
 
-        //Création de la miniature de l'image selon l'axe vertical
+        //Creation de la miniature de l'image selon l'axe vertical
         this.biRotaAH = applyRotation(miniBi,true);
 
-        //Création de la miniature de l'image d'origine
+        //Creation de la miniature de l'image d'origine
         this.biOri = miniBi;
 
-        //Création de la miniature de l'image selon l'axe horizontal
+        //Creation de la miniature de l'image selon l'axe horizontal
         this.biRotaH = applyRotation(miniBi,false);
 
         //JPanel contenant l'image et le jlabel de l'image verticale
@@ -227,9 +227,9 @@ public class Rotation implements Plugin
 
 
     /**
-     * Applique les différents effets à l'image courante et renvoie l'image modifié
+     * Applique les differents effets a l'image courante et renvoie l'image modifie
      * @param img image courante
-     * @return imgModif image modifiée
+     * @return imgModif image modifiee
      */
     public BufferedImage applyEffect(BufferedImage img)
     {
@@ -264,7 +264,7 @@ public class Rotation implements Plugin
 
 
     /**
-     * Applique une rotation sur l'image entrée en parametre selon le sens horaire ou anti horaire
+     * Applique une rotation sur l'image entree en parametre selon le sens horaire ou anti horaire
      * @param img image courante
      * @param ah vrai si rotation anti horaire, faux sinon
      * @return
@@ -296,7 +296,7 @@ public class Rotation implements Plugin
 
 
     /**
-     * prévisualisation sens anti horaire
+     * previsualisation sens anti horaire
      */
     public void previsualiserRotationAH()
     {
@@ -317,7 +317,7 @@ public class Rotation implements Plugin
     }
 
     /**
-     *Prévisualisation rotation sens horaire
+     *Previsualisation rotation sens horaire
      */
     public void previsualiserRotationH()
     {
@@ -339,7 +339,7 @@ public class Rotation implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

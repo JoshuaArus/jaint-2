@@ -85,36 +85,36 @@ public class AideDemarrage extends JDialog implements ActionListener
         "La palette de dessin",
         "La palette de gestion",
         "La palette d'option",
-        "Le système de glisser-déposer",
+        "Le systeme de glisser-deposer",
         "La rotation libre",
         "Les plugins",
-        "Ce tutoriel est terminé"
+        "Ce tutoriel est termine"
     };
 
     private String[] tab_lbl2 =
     {
         "Ce mini tutoriel va vous apprendre les bases du logiciel",
-        "Jaint ne possède pas de barre de menu mais des menus circulaires apparaissant grâce au clic de la souris",
+        "Jaint ne possede pas de barre de menu mais des menus circulaires apparaissant grace au clic de la souris",
         "Elle vous permet d'utiliser les outils de dessin et de modification de l'image",
-        "Elle vous permet de créer de nouveaux fichiers, d'en ouvrir, d'en sauvegarder" ,
+        "Elle vous permet de creer de nouveaux fichiers, d'en ouvrir, d'en sauvegarder" ,
         "Elle vous permet de configurer Jaint comme vous le souhaitez",
-        "Au lieu d'ouvrir une image avec la palette de gestion, vous pouvez utiliser le système de glisser-déposer",
+        "Au lieu d'ouvrir une image avec la palette de gestion, vous pouvez utiliser le systeme de glisser-deposer",
         "Vous devrez cliquer sur un des boutons de rotation se trouvant aux quatre coins de Jaint",
         "Dans la plupart des plugins, vous devrez cliquer sur l'image pour valider l'effet",
         "Vous avez maintenant les bases pour utiliser Jaint"
     };
 
-    private String reussi = "( Passez maintenant à l'étape suivante )";
-    private String fin = "( Après avoir fermer ce tutoriel, vous pourrez presser F1 pour toute aide supplémentaire )";
+    private String reussi = "( Passez maintenant a l'etape suivante )";
+    private String fin = "( Apres avoir ferme ce tutoriel, vous pourrez presser F1 pour toute aide supplementaire )";
 
     private JLabel lbl1 = new JLabel(tab_lbl1[0]);
     private JLabel lbl2 = new JLabel(tab_lbl2[0]);
     private JLabel lbl3 = new JLabel(" ");
     private JLabel lblImg;
 
-    //panel qui va remplacer le bouton "suivant" lorsqu'on désactive ce bouton
+    //panel qui va remplacer le bouton "suivant" lorsqu'on desactive ce bouton
     private JPanel blanc = new JPanel();
-    //idem pour l'image (avec une image transparente à la place du panel)
+    //idem pour l'image (avec une image transparente a la place du panel)
     private ImageIcon imgBlanc = new ImageIcon("./lib/Icons/vide.png");
     private boolean level4OK = false;
     private boolean level5OK = false;
@@ -151,7 +151,7 @@ public class AideDemarrage extends JDialog implements ActionListener
 
         chb = new JCheckBox("Ne plus afficher");
         suivant = new JButton("Suivant");
-        precedent = new JButton("Précédent");
+        precedent = new JButton("Precedent");
         fermer = new JButton("Fermer");
 
         if(!ihm.isHelpSelected())
@@ -393,7 +393,7 @@ public class AideDemarrage extends JDialog implements ActionListener
         if(clic && index != NB_PANEL - 1)
         {
             if(index == 6)
-                lbl2.setText("En maintenant ce bouton enfoncé et en déplaçant votre souris, l'image pivotera. Relâcher le bouton pour valider");
+                lbl2.setText("En maintenant ce bouton enfonce et en deplacant votre souris, l'image pivotera. Relacher le bouton pour valider");
             lbl3.setText(reussi);
         }       
         else
@@ -405,7 +405,7 @@ public class AideDemarrage extends JDialog implements ActionListener
                 break;
 
                 case 1 :
-                    lbl3.setText("Vous allez maintenant apprendre à ouvrir ces palettes");
+                    lbl3.setText("Vous allez maintenant apprendre a ouvrir ces palettes");
                 break;
 
                 case 2 :
@@ -414,21 +414,21 @@ public class AideDemarrage extends JDialog implements ActionListener
 
                 case 3 :
                     lbl3.setText("Maintenez le bouton SHIFT (");
-                    lblFinShift.setText(" Majuscule ) enfoncé et cliquez avec le bouton droit dans la zone ci-dessus");
+                    lblFinShift.setText(" Majuscule ) enfonce et cliquez avec le bouton droit dans la zone ci-dessus");
                     lblImgShift.setIcon(imgShift);
                 break;
 
                 case 4 :
-                    lbl3.setText("Maintenez le bouton CTRL enfoncé et cliquez avec le bouton droit dans la zone ci-dessus");
+                    lbl3.setText("Maintenez le bouton CTRL enfonce et cliquez avec le bouton droit dans la zone ci-dessus");
                 break;
 
                 case 5 :
-                    lbl3.setText("Déplacer une image de votre ordinateur directement dans Jaint ( Pas encore disponible dans ce tuto )");
+                    lbl3.setText("Deplacer une image de votre ordinateur directement dans Jaint ( Pas encore disponible dans ce tuto )");
                 break;
 
                 case 6 :
                     if(!level4OK)
-                        lbl3.setText("Cliquez sur l'image et restez appuyé");
+                        lbl3.setText("Cliquez sur l'image et restez appuye");
                 break;
 
                 case 7 :
@@ -521,7 +521,7 @@ public class AideDemarrage extends JDialog implements ActionListener
 
     
     /**
-     * Paramètre l'affichage du JDialog
+     * Parametre l'affichage du JDialog
      */
     public void initPos()
     {

@@ -12,7 +12,7 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 
 /**
- * Librairie des fonctions utilisées par les différents outils de dessin
+ * Librairie des fonctions utilisees par les differents outils de dessin
  * @author Joshua
  */
 public class FonctionDessin
@@ -20,7 +20,7 @@ public class FonctionDessin
     IHM ihm;
     
     /**
-     * Constructeur pour avoir une réference de l'instance de l'IHM
+     * Constructeur pour avoir une reference de l'instance de l'IHM
      * @param ihm Interface principale
      */
     public FonctionDessin(IHM ihm)
@@ -29,10 +29,10 @@ public class FonctionDessin
     }
     
     /**
-     * Fonction pour dessiner un trait au pinceau (arrondi, pas carré) entre 2 points
-     * @param img L'image à modifier
-     * @param debut La coordonnée du début du trait
-     * @param fin La coordonnée de fin du trait
+     * Fonction pour dessiner un trait au pinceau (arrondi, pas carre) entre 2 points
+     * @param img L'image a modifier
+     * @param debut La coordonnee du debut du trait
+     * @param fin La coordonnee de fin du trait
      * @param taille Epaisseur du trait
      * @param color Couleur du trait
      */
@@ -51,11 +51,11 @@ public class FonctionDessin
     }
 
     /**
-     * Fonction utilisée pour remplir une zone avec une couleur (pot de peinture)
-     * @param img L'image à modifier
-     * @param a Point d'origine à colorier. Les points voisins seront évalués puis traités si nécéssaire
-     * @param tolerance Tolérance permettant de specifier la précision du pot de peinture
-     * @param c Couleur à appliquer
+     * Fonction utilisee pour remplir une zone avec une couleur (pot de peinture)
+     * @param img L'image a modifier
+     * @param a Point d'origine a colorier. Les points voisins seront evalues puis traites si necessaire
+     * @param tolerance Tolerance permettant de specifier la precision du pot de peinture
+     * @param c Couleur a appliquer
      */
     public void remplissage(BufferedImage img, Point a, int tolerance,Color c)
 	{
@@ -70,7 +70,7 @@ public class FonctionDessin
                 else
                 {
                     ArrayList<Point> afaire = new ArrayList<Point>();	// liste des points a traiter
-                    ArrayList<Point> fait = new ArrayList<Point>();	// liste des points deja traités
+                    ArrayList<Point> fait = new ArrayList<Point>();	// liste des points deja traites
                     int c_base = img_new.getRGB(a.x, a.y);		// couleur du point de depart de la proliferation pour calcule des couleurs semblables
                     afaire.add(a);					// point de depart est rajouter dans la liste a faire
 
@@ -112,8 +112,8 @@ public class FonctionDessin
           }
 
         /**
-         * Fonction permettant de récuperer la couleur du pixel séléctionné
-         * @param p Point où récupérer la couleur
+         * Fonction permettant de recuperer la couleur du pixel selectionne
+         * @param p Point où recuperer la couleur
          */
         public void pipette(Point p)
     {
@@ -170,7 +170,7 @@ public class FonctionDessin
 
     /**
      * Fonction pour dessiner une ellipse (marche aussi pour les ronds)
-     * @param img Image à modifier
+     * @param img Image a modifier
      * @param debut Origine de l'ellipse
      * @param fin Fin de l'ellipse
      * @param taille Epaisseur du trait
@@ -210,7 +210,7 @@ public class FonctionDessin
 
     /**
      * Fonction pour dessiner une ligne entre 2 points
-     * @param img Image à modifier
+     * @param img Image a modifier
      * @param debut Origine de la ligne
      * @param fin Fin de la ligne
      * @param taille Epaisseur de la ligne

@@ -19,7 +19,7 @@ import Jaint.*;
 import Jaint.Plugin;
 
 /**
- * Permet d'appliquer un effet de flou ou améliorer la netteté de l'image
+ * Permet d'appliquer un effet de flou ou ameliorer la nettete de l'image
  * @author Jonas
  */
 
@@ -73,12 +73,12 @@ public class FlouNettete implements Plugin
 
     public String getName()
     {
-        return("Flou / Netteté");
+        return("Flou / Nettete");
     }
 
     public String getDescri()
     {
-        return("Regler le flou et la netteté de l'image");
+        return("Regler le flou et la nettete de l'image");
     }
 
     public boolean isEnabled()
@@ -92,9 +92,9 @@ public class FlouNettete implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -135,7 +135,7 @@ public class FlouNettete implements Plugin
         Image mini;
         BufferedImage miniBi;
 
-        this.jd = new JDialog(JFrame.getFrames()[0], "Flou / Netteté", true);
+        this.jd = new JDialog(JFrame.getFrames()[0], "Flou / Nettete", true);
         this.jp = new JPanel(new BorderLayout());
 
         this.jpFlou = new JPanel(new BorderLayout());
@@ -169,13 +169,13 @@ public class FlouNettete implements Plugin
 
         miniBi = Pictimage.toBufferedImage(mini);
 
-        //Création de la miniature de l'image flou
+        //Creation de la miniature de l'image flou
         this.biFlou = applyFlou(miniBi);
         
-        //Création de la miniature de l'image d'origine
+        //Creation de la miniature de l'image d'origine
         this.biOri = miniBi;
 
-        //Création de la miniature de l'image plus nette
+        //Creation de la miniature de l'image plus nette
         this.biNet = applyNet(miniBi);
 
         //JPanel contenant l'image et le jlabel de flou
@@ -198,7 +198,7 @@ public class FlouNettete implements Plugin
 
 
 
-        //JPanel contenant l'image et le jlabel de netteté
+        //JPanel contenant l'image et le jlabel de nettete
         this.jbNet = new JButton(new ImageIcon(this.biNet));
         this.jbNet.addActionListener(new EcouteurNet(this));
         this.jlNet = new JLabel(new ImageIcon("./lib/Icons/Plugins/nette.png"));
@@ -243,9 +243,9 @@ public class FlouNettete implements Plugin
 
    
     /**
-     * Applique les différents effets à l'image courante et renvoie l'image modifié
+     * Applique les differents effets a l'image courante et renvoie l'image modifie
      * @param img image courante
-     * @return imgModif image modifiée
+     * @return imgModif image modifiee
      */
     public BufferedImage applyEffect(BufferedImage img)
     {
@@ -275,9 +275,9 @@ public class FlouNettete implements Plugin
 
 
     /**
-     *Applique un effet de flou à l'image passée en parametre
+     *Applique un effet de flou a l'image passee en parametre
      * @param img BufferedImage courante
-     * @return biModif BufferedImage modifié
+     * @return biModif BufferedImage modifie
      */
     public BufferedImage applyFlou(BufferedImage img)
     {
@@ -290,9 +290,9 @@ public class FlouNettete implements Plugin
     }
 
     /**
-     *Applique un effet de netté à l'image passée en parametre
+     *Applique un effet de nette a l'image passee en parametre
      * @param img BufferedImage courante
-     * @return biModif BufferedImage modifié
+     * @return biModif BufferedImage modifie
      */
     public BufferedImage applyNet(BufferedImage img)
     {
@@ -387,7 +387,7 @@ public class FlouNettete implements Plugin
     }
 
     /**
-     * Previsualisation de l'effet de netteté sur l'apercu
+     * Previsualisation de l'effet de nettete sur l'apercu
      */
     public void previsualiserNet()
     {
@@ -431,7 +431,7 @@ public class FlouNettete implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

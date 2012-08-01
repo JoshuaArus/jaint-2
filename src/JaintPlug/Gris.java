@@ -24,7 +24,7 @@ public class Gris implements Plugin
 
     public String getDescri()
     {
-            return("L'image est grisée");
+            return("L'image est grisee");
     }
 
     public boolean isEnabled()
@@ -70,9 +70,9 @@ public class Gris implements Plugin
     
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage img)
     {
@@ -109,7 +109,7 @@ public class Gris implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public int getNbApplyPlug()

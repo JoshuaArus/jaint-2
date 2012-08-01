@@ -70,7 +70,7 @@ public class Miroire implements Plugin
 
     public String getDescri()
     {
-        return("Permet d'effectuer la symétrie de l'image par rapport à un axe");
+        return("Permet d'effectuer la symetrie de l'image par rapport a un axe");
     }
 
     public boolean isEnabled()
@@ -84,9 +84,9 @@ public class Miroire implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -161,13 +161,13 @@ public class Miroire implements Plugin
 
         miniBi = Pictimage.toBufferedImage(mini);
 
-        //Création de la miniature de l'image selon l'axe vertical
+        //Creation de la miniature de l'image selon l'axe vertical
         this.biMiroireV = applyMiroireV(miniBi);
 
-        //Création de la miniature de l'image d'origine
+        //Creation de la miniature de l'image d'origine
         this.biOri = miniBi;
 
-        //Création de la miniature de l'image selon l'axe horizontal
+        //Creation de la miniature de l'image selon l'axe horizontal
         this.biMiroireH = applyMiroireH(miniBi);
 
         //JPanel contenant l'image et le jlabel de l'image verticale
@@ -229,9 +229,9 @@ public class Miroire implements Plugin
 
 
     /**
-     * Applique les différents effets à l'image courante et renvoie l'image modifié
+     * Applique les differents effets a l'image courante et renvoie l'image modifie
      * @param img image courante
-     * @return imgModif image modifiée
+     * @return imgModif image modifiee
      */
     public BufferedImage applyEffect(BufferedImage img)
     {
@@ -261,9 +261,9 @@ public class Miroire implements Plugin
 
 
     /**
-     *Applique un miroire vertical sur l'image passée en parametre
+     *Applique un miroire vertical sur l'image passee en parametre
      * @param img image courante
-     * @return img image modifiée
+     * @return img image modifiee
      */
     public BufferedImage applyMiroireV(BufferedImage img)
     {
@@ -282,9 +282,9 @@ public class Miroire implements Plugin
     }
 
     /**
-     *Applique un miroire horizontal sur l'image passée en parametre
+     *Applique un miroire horizontal sur l'image passee en parametre
      * @param img image courante
-     * @return img image modifiée
+     * @return img image modifiee
      */
     public BufferedImage applyMiroireH(BufferedImage img)
     {
@@ -303,7 +303,7 @@ public class Miroire implements Plugin
     }
 
     /**
-     *Prévisualisation miroire horizontal
+     *Previsualisation miroire horizontal
      */
     public void previsualiserMiroireH()
     {
@@ -324,7 +324,7 @@ public class Miroire implements Plugin
     }
 
     /**
-     *Prévisualisation miroire vertical
+     *Previsualisation miroire vertical
      */
     public void previsualiserMiroireV()
     {
@@ -346,7 +346,7 @@ public class Miroire implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

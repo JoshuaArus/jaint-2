@@ -9,7 +9,7 @@ import javax.swing.JButton;
 import javax.swing.border.Border;
 
 /**
- * Classe permettant de mettre à jour le bas du centre pour sélectionner les formes géométriques
+ * Classe permettant de mettre a jour le bas du centre pour selectionner les formes geometriques
  * @author Jeff
  */
 public class EcouteurFormeBas implements ActionListener

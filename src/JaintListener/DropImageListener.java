@@ -19,7 +19,7 @@ import java.net.URISyntaxException;
 import java.util.List;
 
 /**
- * Classe réalisant le drag and drop d'image et de plugin
+ * Classe realisant le drag and drop d'image et de plugin
  * @author Jonas
  */
 public class DropImageListener implements DropTargetListener
@@ -95,7 +95,7 @@ public class DropImageListener implements DropTargetListener
 			}
 			catch (IOException e)
 			{
-				System.err.println("Erreur d'entrée-sortie");
+				System.err.println("Erreur d'entree-sortie");
 			}
 		}
 		else //Code pour unix et mac
@@ -148,7 +148,7 @@ public class DropImageListener implements DropTargetListener
 					}
 					catch (IOException e)
 					{
-						System.err.println("Erreur d'entrée-sortie");
+						System.err.println("Erreur d'entree-sortie");
 					}
 					catch (URISyntaxException e)
 					{
@@ -165,7 +165,7 @@ public class DropImageListener implements DropTargetListener
 
 			if(!importer)
 			{
-				System.err.println("Ce fichier n'a pu être importé");
+				System.err.println("Ce fichier n'a pu etre importe");
 			}
 		}
 	}

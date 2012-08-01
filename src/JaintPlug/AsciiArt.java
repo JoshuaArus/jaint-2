@@ -39,7 +39,7 @@ public class AsciiArt implements Plugin
 
     private final int NBCHAR = 200;
 
-    //Tableau des caractères ordonnées suivant leur luminosité.
+    //Tableau des caracteres ordonnees suivant leur luminosite.
     private CharValue[] charTable = new CharValue[NBCHAR];
 
 
@@ -68,7 +68,7 @@ public class AsciiArt implements Plugin
 
     public String getDescri()
     {
-        return("Des caractères constituent l'image de base en fonction de la luminosité");
+        return("Des caracteres constituent l'image de base en fonction de la luminosite");
     }
 
     public boolean isEnabled()
@@ -82,9 +82,9 @@ public class AsciiArt implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -123,9 +123,9 @@ public class AsciiArt implements Plugin
     }
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage img)
     {
@@ -286,7 +286,7 @@ public class AsciiArt implements Plugin
     }
     
     /**
-     * Prévisualiser l'image sur l'apercu
+     * Previsualiser l'image sur l'apercu
      */
     public void previsualiser()
     {
@@ -295,7 +295,7 @@ public class AsciiArt implements Plugin
     }
 
     /**
-     * Recupere la taille des caractères dans le JaintSpiner
+     * Recupere la taille des caracteres dans le JaintSpiner
      */
     public void setTaille()
     {
@@ -306,8 +306,8 @@ public class AsciiArt implements Plugin
     
 
     /**
-    * La fonction genereTable permet de generer un tableau de caractères en faisant
-    * correspondre le caractère avec la luminosité de ce caractère
+    * La fonction genereTable permet de generer un tableau de caracteres en faisant
+    * correspondre le caractere avec la luminosite de ce caractere
     *
     */
     public void genereTable()
@@ -340,7 +340,7 @@ public class AsciiArt implements Plugin
     }
 
     /**
-    *	Trie les caractères et les places de facon ordonnée dans le tableau charTable.
+    *	Trie les caracteres et les places de facon ordonnee dans le tableau charTable.
     */
     public void trieur()
     {
@@ -348,7 +348,7 @@ public class AsciiArt implements Plugin
         {
             for(int j=i+1;j<NBCHAR;j++)
             {
-                // trie le tableau de caractere en fonction de la luminosité de chaque caractère.
+                // trie le tableau de caractere en fonction de la luminosite de chaque caractere.
                 if(charTable[i].value>charTable[j].value)
                 {
                     CharValue cv = new CharValue(charTable[i].caractere, charTable[i].value);
@@ -360,7 +360,7 @@ public class AsciiArt implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)
