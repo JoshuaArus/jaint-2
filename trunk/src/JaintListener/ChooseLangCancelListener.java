@@ -1,7 +1,7 @@
 package JaintListener;
 
 /**
- * Classe permettant de fermer le JDialog de sélecteur de langue
+ * Classe permettant de fermer le JDialog de selecteur de langue
  * @author Jeff
  */
 

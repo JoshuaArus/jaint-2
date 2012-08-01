@@ -1,7 +1,7 @@
 package Jaint;
 /**
  * @(#)Text1.java
- * Crée un sélecteur couleur pure
+ * Cree un selecteur couleur pure
  *
  * @author Jeff
  * @version 1.00 2009/12/8
@@ -36,17 +36,17 @@ public class JSliderColorChooser extends JComponent
 
 
        /**
-        * Taille en pixel de la zone de gris dans le sélecteur
+        * Taille en pixel de la zone de gris dans le selecteur
         */
        public static final int FIN_GRIS = 10;
 
 
     
        /**
-        * Construit le sélecteur de couleur
-        * @param width Largeur du sélecteur
-        * @param height Hauteur du dégradé du sélecteur
-        * @param obj Une JPalette ou un plugin Teinte (utilisé dans ses deux classes)
+        * Construit le selecteur de couleur
+        * @param width Largeur du selecteur
+        * @param height Hauteur du degrade du selecteur
+        * @param obj Une JPalette ou un plugin Teinte (utilise dans ses deux classes)
         */
        public JSliderColorChooser(int width, int height, Object obj)
     {
@@ -131,9 +131,9 @@ public class JSliderColorChooser extends JComponent
                     }
 			 public void mouseEntered(MouseEvent e)
 			 {
-                             /* Cette partie de code permet d'enlever la ligne de pointillé lorsqu'on quitte la zone du dégradé
-                              * On test par quel côté on rentre. Si on rentre par le bas du JSliderColorChooser, il n'y avait pas de pointillé de dessiné
-                              * Ce n'est donc pas nécessaire de redessiner la palette
+                             /* Cette partie de code permet d'enlever la ligne de pointille lorsqu'on quitte la zone du degrade
+                              * On test par quel cote on rentre. Si on rentre par le bas du JSliderColorChooser, il n'y avait pas de pointille de dessine
+                              * Ce n'est donc pas necessaire de redessiner la palette
                               * */
 
                              if(palette != null)
@@ -196,7 +196,7 @@ public class JSliderColorChooser extends JComponent
 
     /**
      * Renvoie l'emplacement du slider
-     * @return La coordonnée x du slider
+     * @return La coordonnee x du slider
      */
     public int getSliderX()
     {
@@ -241,8 +241,8 @@ public class JSliderColorChooser extends JComponent
     
       
     /**
-     * Place le slider du sélecteur à l'endroit indiqué
-     * @param x Coordonnée x
+     * Place le slider du selecteur a l'endroit indique
+     * @param x Coordonnee x
      */
     public void setSliderX(int x)
     {
@@ -273,8 +273,8 @@ public class JSliderColorChooser extends JComponent
     }
 
     /**
-     * Renvoie le dégradé contenant les couleurs pures
-     * @return Le dégradé
+     * Renvoie le degrade contenant les couleurs pures
+     * @return Le degrade
      */
     public BufferedImage getDegrade()
     {

@@ -76,8 +76,8 @@ public class IHM extends JFrame {
 			JTabbedPane.SCROLL_TAB_LAYOUT);
 
 	/**
-	 * Référence vers l'instance de <code>Jaint</code> contenant certaines
-	 * données
+	 * Reference vers l'instance de <code>Jaint</code> contenant certaines
+	 * donnees
 	 */
 	public Jaint jaint;
 	/**
@@ -122,7 +122,7 @@ public class IHM extends JFrame {
 	private JWindow splashScreen;
 	private JProgressBar jpb = new JProgressBar();
 
-	// vaut vrai si on a lancé le tutoriel
+	// vaut vrai si on a lance le tutoriel
 	private boolean lu = false;
 
 	private JPaletteItem outil = new JPaletteItem(
@@ -203,13 +203,13 @@ public class IHM extends JFrame {
 	private boolean aideLuDebut = false;
 
 	/**
-	 * Renvoi l'instance de l'IHM crée
+	 * Renvoi l'instance de l'IHM cree
 	 * 
 	 * @param j
-	 *            Instance de Jaint contenant le reste des données
+	 *            Instance de Jaint contenant le reste des donnees
 	 * @param p
 	 *            Le pluginsLoader permettant de charger les plugins dans leur
-	 *            dossier dès le démarrage
+	 *            dossier des le demarrage
 	 */
 	public IHM(Jaint j, PluginsLoader p) {
 		super("Jaint 1.0");
@@ -268,7 +268,7 @@ public class IHM extends JFrame {
 		fd = new FonctionDessin(this);
 
 		jpb.setValue(10);
-		jpb.setString("Chargement des éléments - 10%");
+		jpb.setString("Chargement des elements - 10%");
 		sleep(100);
 
 		ep = new EcouteurPalette(palette, this);
@@ -276,13 +276,13 @@ public class IHM extends JFrame {
 		epO = new EcouteurPalette(paletteOption, this);
 
 		jpb.setValue(15);
-		jpb.setString("Chargement des éléments - 15%");
+		jpb.setString("Chargement des elements - 15%");
 		sleep(100);
 
 		paletteGestion.addPalette(paletteOption);
 
 		jpb.setValue(20);
-		jpb.setString("Chargement des éléments - 20%");
+		jpb.setString("Chargement des elements - 20%");
 		sleep(100);
 
 		paletteOption.addPalette(paletteGestion);
@@ -294,7 +294,7 @@ public class IHM extends JFrame {
 		jtp.addChangeListener(new EcouteurMAJIconPlug(this));
 
 		jpb.setValue(30);
-		jpb.setString("Chargement des éléments connexes - 30%");
+		jpb.setString("Chargement des elements connexes - 30%");
 		sleep(100);
 
 		// Filtres de files pour le JFileChooser
@@ -302,7 +302,7 @@ public class IHM extends JFrame {
 		jfc.addChoosableFileFilter(new FileNameExtensionFilter(
 				"Class Files (.class)", "class"));
 
-		// Paramètrages divers
+		// Parametrages divers
 		jfc.setMultiSelectionEnabled(false);
 		jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
 
@@ -316,7 +316,7 @@ public class IHM extends JFrame {
 		sleep(400);
 
 		this.addWindowListener(new JaintWindowListener(this));// ecouteur qui
-																// gère la
+																// gere la
 																// fermeture du
 																// logiciel
 
@@ -346,7 +346,7 @@ public class IHM extends JFrame {
 		this.initPluginDialog();
 
 		jpb.setValue(100);
-		jpb.setString("Chargement de la fenêtre principale - 100%");
+		jpb.setString("Chargement de la fenetre principale - 100%");
 
 		// configuration de la fenetre
 		setPreferredSize(new Dimension((int) d.getWidth() / 2,
@@ -355,13 +355,13 @@ public class IHM extends JFrame {
 		setIconImage(Toolkit.getDefaultToolkit().createImage(
 				"./lib/Icons/jaint.png"));// modification de l'icone sous
 											// windows
-		pack();// calcul de la position des éléments
+		pack();// calcul de la position des elements
 		setExtendedState(JFrame.MAXIMIZED_BOTH);// maximisation de la fenetre
 		splashScreen.dispose();
 		setVisible(true);
 
-		// affichage de l'aide de démarrage si la case du checkbox était
-		// cochée
+		// affichage de l'aide de demarrage si la case du checkbox etait
+		// cochee
 		if (lu) {
 			aideDebut.initPos();
 		}
@@ -387,22 +387,22 @@ public class IHM extends JFrame {
 									this,
 									"Le plugin "
 											+ we.getPlugin()
-											+ " est invalide. Il ne peut pas être importé dans Jaint",
+											+ " est invalide. Il ne peut pas etre importe dans Jaint",
 									"Plugin invalide",
 									JOptionPane.ERROR_MESSAGE);
 				}
 			} else {
-				addPlugin(); // On réouvre le fileChooser
+				addPlugin(); // On reouvre le fileChooser
 			}
 		}
 	}
 
 	/**
-	 * Ajout un nouvel onglet à partir du menu de la palette ou du drag and
+	 * Ajout un nouvel onglet a partir du menu de la palette ou du drag and
 	 * drop
 	 * 
 	 * @param s
-	 *            Le chemin d'accès de l'image à ouvrir
+	 *            Le chemin d'acces de l'image a ouvrir
 	 */
 	public void addTab(String s) {
 
@@ -417,24 +417,24 @@ public class IHM extends JFrame {
 	
 			jaint.lst_pict.add(lst);
 	
-			MainComponent main = new MainComponent(picture, this);// création du
+			MainComponent main = new MainComponent(picture, this);// creation du
 																	// composant
 																	// principal =
 																	// l'image
 																	// centrale (pas
 																	// onglet)
-			TabComponent tab = new TabComponent(picture, trunk(name(s)), this);// création
+			TabComponent tab = new TabComponent(picture, trunk(name(s)), this);// creation
 																				// de
 																				// l'onglet
 	
 			jtp.add(main);// on l'ajoute a un onglet vide
 			jtp.setSelectedIndex(jtp.getTabCount() - 1);// on se place sur cet
 														// onglet (le dernier
-														// rajouté)
+														// rajoute)
 	
 			jtp.setTabComponentAt(jtp.getSelectedIndex(), tab);// on affecte a
 																// l'onglet le
-																// composant privé
+																// composant prive
 																// qui permet
 																// d'afficher ce
 																// qu'on veut
@@ -463,12 +463,12 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Ajoute un nouvel onglet à partir d'une image pré-existante
+	 * Ajoute un nouvel onglet a partir d'une image pre-existante
 	 * 
 	 * @param img
-	 *            L'image à rajouter
+	 *            L'image a rajouter
 	 * @param type
-	 *            Le type d'image rajouté (1 pour "Screenshot", 2 pour
+	 *            Le type d'image rajoute (1 pour "Screenshot", 2 pour
 	 *            "Image vide", 3 pour la "webcam", 4 pour la fonction "rogner)
 	 */
 	public void addTab(BufferedImage img, int type) {
@@ -482,7 +482,7 @@ public class IHM extends JFrame {
 
 		jaint.lst_pict.add(lst);
 
-		MainComponent main = new MainComponent(picture, this);// création du
+		MainComponent main = new MainComponent(picture, this);// creation du
 																// composant
 																// principal =
 																// l'image
@@ -494,14 +494,14 @@ public class IHM extends JFrame {
 		{
 			nbScreenshot++;
 			tab = new TabComponent(picture, "Screenshot_" + nbScreenshot
-					+ "  *", this);// création de l'onglet
+					+ "  *", this);// creation de l'onglet
 
 			chaine = "Screenshot_" + nbScreenshot;
 		} else if (type == 2)// si c'est un nouveau fichier vide
 		{
 			nbScreenshot++;
 			tab = new TabComponent(picture,
-					"New_Blank_" + nbScreenshot + "  *", this);// création de
+					"New_Blank_" + nbScreenshot + "  *", this);// creation de
 																// l'onglet
 
 			chaine = "New_Blank_" + nbScreenshot;
@@ -509,7 +509,7 @@ public class IHM extends JFrame {
 		{
 			nbScreenshot++;
 			tab = new TabComponent(picture, "New_Webcam_" + nbScreenshot
-					+ "  *", this);// création de l'onglet
+					+ "  *", this);// creation de l'onglet
 
 			chaine = "New_Webcam_" + nbScreenshot;
 		} else if (type == 4) {
@@ -519,7 +519,7 @@ public class IHM extends JFrame {
 				previous = previous.substring(0, previous.length() - 4);
 
 			previous = previous + "_" + nbScreenshot + "  *";
-			tab = new TabComponent(picture, previous, this);// création de
+			tab = new TabComponent(picture, previous, this);// creation de
 															// l'onglet
 
 			chaine = jtp.getToolTipTextAt(jtp.getSelectedIndex())
@@ -527,7 +527,7 @@ public class IHM extends JFrame {
 		} else {
 			nbScreenshot++;
 			String nom = jtp.getToolTipTextAt(jtp.getSelectedIndex());
-			tab = new TabComponent(picture, "New " + trunk(nom) + "  *", this);// création
+			tab = new TabComponent(picture, "New " + trunk(nom) + "  *", this);// creation
 																				// de
 																				// l'onglet
 
@@ -537,10 +537,10 @@ public class IHM extends JFrame {
 		jtp.add(main);// on l'ajoute a un onglet vide
 		jtp.setSelectedIndex(jtp.getTabCount() - 1);// on se place sur cet
 													// onglet (le dernier
-													// rajouté)
+													// rajoute)
 		jtp.setTabComponentAt(jtp.getSelectedIndex(), tab);// on affecte a
 															// l'onglet le
-															// composant privé
+															// composant prive
 															// qui permet
 															// d'afficher ce
 															// qu'on veut
@@ -573,10 +573,10 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Fermer l'onglet au rang donné
+	 * Fermer l'onglet au rang donne
 	 * 
 	 * @param i
-	 *            Rang de l'onglet à fermer (commence à 0)
+	 *            Rang de l'onglet a fermer (commence a 0)
 	 */
 	public void close(int i) {
 		JOptionPane jop = new JOptionPane();
@@ -626,7 +626,7 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Si le plugin est activé, on le désactive, si il est désactivé on
+	 * Si le plugin est active, on le desactive, si il est desactive on
 	 * l'active
 	 */
 	public void edPlugin() {
@@ -635,22 +635,22 @@ public class IHM extends JFrame {
 
 		for (int i = 0; i < nbRows; i++) {
 			if (this.jt_listPlugins.isRowSelected(i)) {
-				// Si le plugin est activé on le désactive, et on le retire de
+				// Si le plugin est active on le desactive, et on le retire de
 				// la liste
 				if (this.jaint.getPluginsLoader().getPlugins().get(i)
 						.isEnabled()) {
-					// On modifie l'attribue estActivé des plugins estActive :
+					// On modifie l'attribue estActive des plugins estActive :
 					// false
 					this.jaint.getPluginsLoader().getPlugins().get(i)
 							.setEnabled(false);
 
-					// Le plugin est automatiquement retiré de la liste car
+					// Le plugin est automatiquement retire de la liste car
 					// lors de l'apelle des initPlugsMenu()
-					// on ajoute à la liste uniquement les plugins qui activé
+					// on ajoute a la liste uniquement les plugins qui active
 					// (estAcrive : true)
 
 				} else if (!this.jaint.getPluginsLoader().getPlugins().get(i)
-						.isEnabled())// Si le plugin est désactivé
+						.isEnabled())// Si le plugin est desactive
 				{
 					// On modifie l'attribue estActive
 					this.jaint.getPluginsLoader().getPlugins().get(i)
@@ -664,7 +664,7 @@ public class IHM extends JFrame {
 		// On efface tous les plugins de la liste des plugins actifs
 		pl.removeAllListPluginActif();
 
-		// On ajoute à cette liste uniquement les plugins qui sont activés
+		// On ajoute a cette liste uniquement les plugins qui sont actives
 		for (int i = 0; i < this.jaint.getPluginsLoader().getPlugins().size(); i++) {
 			plug = this.jaint.getPluginsLoader().getPlugins().get(i);
 			if (plug.isEnabled()) {
@@ -883,8 +883,8 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Methode affichant une fenêtre pour specifier la taille du fichier blanc
-	 * a créer et rajoute automatiquement un onglet contenant la nouvelle image
+	 * Methode affichant une fenetre pour specifier la taille du fichier blanc
+	 * a creer et rajoute automatiquement un onglet contenant la nouvelle image
 	 */
 	public void nouveauFichier() {
 
@@ -922,12 +922,12 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Fonction permettant de prendre une impression d'écran sur une zone
-	 * donnée
+	 * Fonction permettant de prendre une impression d'ecran sur une zone
+	 * donnee
 	 * 
 	 * @param rec
-	 *            Zone à copier dans la BufferedImage
-	 * @return L'image contenant la zone séléctionnée
+	 *            Zone a copier dans la BufferedImage
+	 * @return L'image contenant la zone selectionnee
 	 */
 	public static BufferedImage getScreenshot(Rectangle rec) {
 		BufferedImage image = null;
@@ -941,7 +941,7 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Création de la fenetre de gestionnaire de plugins
+	 * Creation de la fenetre de gestionnaire de plugins
 	 */
 	public void initPluginDialog() {
 
@@ -962,7 +962,7 @@ public class IHM extends JFrame {
 		this.jp_butPlugins = new JPanel(new GridLayout(1, 2));
 		this.jb_addPlugin = new JButton("Ajouter");
 		this.jb_removePlugin = new JButton("Supprimer");
-		this.jb_edPlugin = new JButton("Activer / Désactiver");
+		this.jb_edPlugin = new JButton("Activer / Desactiver");
 		this.jb_addPlugin.addActionListener(new AddPluginListener(this));
 		this.jb_removePlugin.addActionListener(new RemovePluginListener(this));
 		this.jb_edPlugin.addActionListener(new EDPluginListener(this));
@@ -1017,7 +1017,7 @@ public class IHM extends JFrame {
 				.get(jaint.lst_pos.get(index));
 		Image temp = pict.getBufferedImage().getScaledInstance(dimImg.width,
 				dimImg.height, Image.SCALE_SMOOTH);
-		// miniature de base terminée au format Image
+		// miniature de base terminee au format Image
 
 		for (int i = 0; i < this.jaint.getPluginsLoader().getNbPlugins(); i++) {
 
@@ -1026,11 +1026,11 @@ public class IHM extends JFrame {
 			row.add(this.jaint.getPluginsLoader().getPlugins().get(i)
 					.getDescri());
 
-			// On vérifie si le plugin est activé ou non
+			// On verifie si le plugin est active ou non
 			if (this.jaint.getPluginsLoader().getPlugins().get(i).isEnabled()) {
-				row.add("Activé");
+				row.add("Active");
 				if (jtp.getSelectedIndex() != -1) {
-					// Seulement si le plugin est activé on le rajoute dans la
+					// Seulement si le plugin est active on le rajoute dans la
 					// liste des plugins
 
 					BufferedImage mini = new BufferedImage(dimImg.width,
@@ -1052,7 +1052,7 @@ public class IHM extends JFrame {
 				}
 
 			} else {
-				row.add("Désactivé");
+				row.add("Desactive");
 
 			}
 
@@ -1063,7 +1063,7 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Applique le plugin selectionné à l'image courante
+	 * Applique le plugin selectionne a l'image courante
 	 * 
 	 * @param plug
 	 */
@@ -1075,7 +1075,7 @@ public class IHM extends JFrame {
 
 	/**
 	 * Fonction qui change le text du bouton Desactiver/Activer du gestionnaire
-	 * de plugin en fonction du plugin sélectionné
+	 * de plugin en fonction du plugin selectionne
 	 */
 	public void modifyBtnED() {
 		int nbRows = this.jaint.getPluginsLoader().getNbPlugins();
@@ -1084,7 +1084,7 @@ public class IHM extends JFrame {
 		boolean desact = false;
 		for (int i = 0; i < nbRows; i++) {
 			if (this.jt_listPlugins.isRowSelected(i)) {
-				// Si le plugin est activé on le désactive, et on le retire de
+				// Si le plugin est active on le desactive, et on le retire de
 				// la liste
 				if (this.jaint.getPluginsLoader().getPlugins().get(i)
 						.isEnabled()) {
@@ -1099,20 +1099,20 @@ public class IHM extends JFrame {
 		if (desact && !act) {
 			res = "Activer";
 		} else if (!desact && act) {
-			res = "Désactiver";
+			res = "Desactiver";
 		} else {
-			res = "Activer / Désactiver";
+			res = "Activer / Desactiver";
 		}
 
 		jb_edPlugin.setText(res);
 	}
 
 	/**
-	 * Fonction renvoyant le nom d'un fichier selon le chemin d'accès passé en
-	 * paramètre
+	 * Fonction renvoyant le nom d'un fichier selon le chemin d'acces passe en
+	 * parametre
 	 * 
 	 * @param s
-	 *            Chaine à découper
+	 *            Chaine a decouper
 	 * @return Le nom du fichier avec l'extension
 	 */
 	public String name(String s)// extract the name file of the path
@@ -1143,7 +1143,7 @@ public class IHM extends JFrame {
 		int over = JOptionPane
 				.showOptionDialog(
 						null,
-						"Voules vous vraiment supprimer le(s) plugin(s) selectionné(s) ?",
+						"Voules vous vraiment supprimer le(s) plugin(s) selectionne(s) ?",
 						"Supprimer plugins", JOptionPane.YES_NO_OPTION,
 						JOptionPane.QUESTION_MESSAGE, null, options, options[0]);
 		int nb_suppr = 0;
@@ -1160,12 +1160,12 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Fonction permettant de tronquer une chaine à 8 caractères et de
+	 * Fonction permettant de tronquer une chaine a 8 caracteres et de
 	 * rajouter "..." si besoin
 	 * 
 	 * @param s
-	 *            La chaine à tronquer
-	 * @return La chaine tronquée à 8 caractères
+	 *            La chaine a tronquer
+	 * @return La chaine tronquee a 8 caracteres
 	 */
 	public String trunk(String s) {
 		if (s.length() > 8)
@@ -1183,7 +1183,7 @@ public class IHM extends JFrame {
 	}
 
 	/**
-	 * Fonction permettant de passer d'un mode fenêtré au mode plein écran et
+	 * Fonction permettant de passer d'un mode fenetre au mode plein ecran et
 	 * vice versa.
 	 */
 	public void pleinEcran() {

@@ -1,7 +1,7 @@
 package JaintListener;
 
 /**
- * Classe créant la boite de dialogue qui permet la sélection d'une langue
+ * Classe creant la boite de dialogue qui permet la selection d'une langue
  * @author Jeff
  */
 

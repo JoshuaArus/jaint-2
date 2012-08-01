@@ -1,7 +1,7 @@
 package JaintListener;
 
 /**
- * Classe lançcant le traitement adéquat lorsque l'utilisateur a validé la sélection d'une langue
+ * Classe lanccant le traitement adequat lorsque l'utilisateur a valide la selection d'une langue
  * @author Jeff
  */
 

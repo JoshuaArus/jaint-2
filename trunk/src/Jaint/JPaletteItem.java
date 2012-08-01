@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import javax.swing.JMenuItem;
 
 /**
- * Classe créant des objets pouvant être ajouté à une JPalette, et pouvant stocker des SubmenuItem
+ * Classe creant des objets pouvant etre ajoute a une JPalette, et pouvant stocker des SubmenuItem
  * @author Jeff
  */
 public class JPaletteItem extends JMenuItem
@@ -28,7 +28,7 @@ public class JPaletteItem extends JMenuItem
         private Dimension dimImg;
         private String toolTypeText;
 
-        //permet de gérer le décalage des boutons lorsqu'ils y en a trop dans ce sous menu
+        //permet de gerer le decalage des boutons lorsqu'ils y en a trop dans ce sous menu
         
         
         private SubmenuItem FLECHE_RETOUR;
@@ -113,7 +113,7 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Enlève tous les SubmenuItem de ce JPaletteItem
+     * Enleve tous les SubmenuItem de ce JPaletteItem
      */
     @Override
     public void removeAll()
@@ -173,7 +173,7 @@ public class JPaletteItem extends JMenuItem
     
     /**
      * Permet d'ouvrir ou de fermer le JPaletteItem au prochain rafraichissement de la JPalette
-     * @param state Ouvert si vrai, fermé sinon
+     * @param state Ouvert si vrai, ferme sinon
      */
     public void setOpen(boolean state)
     {
@@ -190,7 +190,7 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Permet d'ajouter des SubmenuItem à ce JPaletteItem
+     * Permet d'ajouter des SubmenuItem a ce JPaletteItem
      */
     public void addSubmenu()
     {
@@ -198,7 +198,7 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Renvoie le SubmenuItem à l'indice voulu
+     * Renvoie le SubmenuItem a l'indice voulu
      * @param index L'indice du SubmenuItem
      * @return Le SubmenuItem
      */
@@ -241,7 +241,7 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Renvoie la référence de la liste comportant les SubmenuItem visible dans la JPalette
+     * Renvoie la reference de la liste comportant les SubmenuItem visible dans la JPalette
      * @return La liste des SubmenuItem
      */
     public ArrayList<SubmenuItem> getLstBtn()
@@ -257,9 +257,9 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Incrémente le curseur s'il n'est pas en dehors de la liste des SubmenuItem
+     * Incremente le curseur s'il n'est pas en dehors de la liste des SubmenuItem
      * @param list La liste des SubmenuItem visible dans la JPalette
-     * @param fullList La liste complète
+     * @param fullList La liste complete
      */
     public void curseurPlus(ArrayList<SubmenuItem> list, ArrayList<SubmenuItem> fullList)
     {
@@ -275,9 +275,9 @@ public class JPaletteItem extends JMenuItem
     
     /**
      *
-     * Décrémente le curseur s'il n'est pas en dehors de la liste des SubmenuItem
+     * Decremente le curseur s'il n'est pas en dehors de la liste des SubmenuItem
      * @param list La liste des SubmenuItem visible dans la JPalette
-     * @param fullList La liste complète
+     * @param fullList La liste complete
      */
     public void curseurMoins(ArrayList<SubmenuItem> list, ArrayList<SubmenuItem> fullList)
     {
@@ -338,8 +338,8 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Renvoie la référence de la liste complète des SubmenuItem
-     * @return La liste complète
+     * Renvoie la reference de la liste complete des SubmenuItem
+     * @return La liste complete
      */
     public ArrayList<SubmenuItem> getFullList()
     {
@@ -389,8 +389,8 @@ public class JPaletteItem extends JMenuItem
     }
 
     /**
-     * Renvoie la liste de tous les SubmenuItem en cassant la référence
-     * @return La liste complète
+     * Renvoie la liste de tous les SubmenuItem en cassant la reference
+     * @return La liste complete
      */
     public ArrayList<SubmenuItem> getAllSubmenuItem()
     {

@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Classe mettant à jour le centre de la palette si le pinceau est sélectionné
+ * Classe mettant a jour le centre de la palette si le pinceau est selectionne
  * @author Jeff
  */
 public class EcouteurPinceau implements ActionListener

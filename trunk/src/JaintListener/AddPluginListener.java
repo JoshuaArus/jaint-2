@@ -14,7 +14,7 @@ public class AddPluginListener implements ActionListener
         IHM ihm;
 
         /**
-         * Rajoute l'écouteur sur l'IHM passée en parametre
+         * Rajoute l'ecouteur sur l'IHM passee en parametre
          * @param i ihm courante
          */
         public AddPluginListener(IHM i)

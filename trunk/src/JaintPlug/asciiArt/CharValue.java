@@ -1,20 +1,20 @@
 package JaintPlug.asciiArt;
 
 /**
-    *	Sous classe associant une luminosité à chaque caractères.
+    *	Sous classe associant une luminosite a chaque caracteres.
     */
     public class CharValue
     {
         /**
-        *	Correspond au caractère.
+        *	Correspond au caractere.
         */
         public String caractere;
         /**
-        *	Luminosité du caractère.
+        *	Luminosite du caractere.
         */
         public int value;
         /**
-        *	Construit un CharValue en associant à un caractères une luminosité
+        *	Construit un CharValue en associant a un caracteres une luminosite
          * @param s
          * @param i
          */

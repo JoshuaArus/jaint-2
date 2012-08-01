@@ -23,9 +23,9 @@ public interface Plugin
     public String getDescri();
 
     /**
-     *  Renvoie si un plugin est activé ou non
+     *  Renvoie si un plugin est active ou non
      *
-     * @return Vrai si le plugin est activé, faux sinon
+     * @return Vrai si le plugin est active, faux sinon
      */
     public boolean isEnabled();
 
@@ -37,27 +37,27 @@ public interface Plugin
     public void setEnabled(boolean b);
 
     /**
-     * Méthode pour la création de l'icone du plugin, avec les paramètres souhaité
+     * Methode pour la creation de l'icone du plugin, avec les parametres souhaite
      * 
      *
      * @param	img	l'image sur laquelle appliquer les modifications
-     * @return icon     icone modifiée par l'effet
+     * @return icon     icone modifiee par l'effet
      */
     public BufferedImage applyEffectIcon(BufferedImage img);
 
     
     /**
-     * Méthode générale qui appelle tous les autres méthodes quand on applique un plugin
+     * Methode generale qui appelle tous les autres methodes quand on applique un plugin
      * 
      * @param img   l'image sur laquelle appliquer l'effet
-     * @return imgModif     image modifiée
+     * @return imgModif     image modifiee
      */
     public BufferedImage modify(BufferedImage img);
 
 
 
     /**
-     * Méthode qui renvoie le nombre de fois que l'effet doit être appliqué à l'icone afin de voir un résultat
+     * Methode qui renvoie le nombre de fois que l'effet doit etre applique a l'icone afin de voir un resultat
      *
      * @return nbEffect     Nombre d'application de l'effet sur l'icone
      */

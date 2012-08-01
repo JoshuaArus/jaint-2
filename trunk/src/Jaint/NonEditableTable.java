@@ -15,7 +15,7 @@ public class NonEditableTable extends JTable
 	 */
 	private static final long serialVersionUID = -1617746832183058300L;
 	/**
-     *Constructeur d'une JTable non éditable
+     *Constructeur d'une JTable non editable
      * @param dm TableModel
      */
     public NonEditableTable(TableModel dm)

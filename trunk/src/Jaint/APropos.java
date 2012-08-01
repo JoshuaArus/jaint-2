@@ -13,7 +13,7 @@ import javax.swing.JTextArea;
 import javax.swing.WindowConstants;
 
 /**
- * Fenêtre contenant la licence d'utilisation et les informations sur le logiciel
+ * Fenetre contenant la licence d'utilisation et les informations sur le logiciel
  * @author Joshua
  */
 public class APropos extends JDialog
@@ -24,7 +24,7 @@ public class APropos extends JDialog
 	private static final long serialVersionUID = -7889478324716643749L;
 
 	/**
-     * Renvoi une nouvelle instance de la fenêtre <code>APropos</code>
+     * Renvoi une nouvelle instance de la fenetre <code>APropos</code>
      * @param ihm Le composant parent. Dans le cas de Jaint c'est l'IHM
      */
     public APropos(IHM ihm)
@@ -42,7 +42,7 @@ public class APropos extends JDialog
 
         JPanel jpLicense = new JPanel();
 
-        String license = "Copyright (C) 2010 ARUS Joshua, LEIS Jonas, SPATZ Jean-François\n\n";
+        String license = "Copyright (C) 2010 ARUS Joshua, LEIS Jonas, SPATZ Jean-Francois\n\n";
         license += "This program is free software; you can redistribute it and/or modify\n";
         license += "it under the terms of the GNU General Public License as published by\n";
         license += "the Free Software Foundation; either version 2 of the License, or\n";
@@ -71,13 +71,13 @@ public class APropos extends JDialog
         text += "<br /><ul>";
         text += "<li>Joshua ARUS</li>";
         text += "<li>Jonas LEIS</li>";
-        text += "<li>Jean-François SPATZ</li>";
+        text += "<li>Jean-Francois SPATZ</li>";
         text += "</ul></html>";
         jp_info_center.add(new JLabel(text, JLabel.CENTER), BorderLayout.CENTER);
 
         jp_info.add(jp_info_center, BorderLayout.CENTER);
 
-        jp_info.add(new JLabel("<html>L'urgent est fait, l'impossible est en cours, pour les miracles, prévoir un délai...</html>", JLabel.CENTER), BorderLayout.SOUTH);
+        jp_info.add(new JLabel("<html>L'urgent est fait, l'impossible est en cours, pour les miracles, prevoir un delai...</html>", JLabel.CENTER), BorderLayout.SOUTH);
 
         jtp.addTab("Info", jp_info);
         jtp.addTab("License", jpLicense);

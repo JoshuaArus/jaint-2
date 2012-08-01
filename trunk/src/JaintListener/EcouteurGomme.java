@@ -5,7 +5,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * Classe permettant de mettre à jour le centre de la palette lorsque la gomme est sélectionnée
+ * Classe permettant de mettre a jour le centre de la palette lorsque la gomme est selectionnee
  * @author Jeff
  */
 public class EcouteurGomme implements ActionListener

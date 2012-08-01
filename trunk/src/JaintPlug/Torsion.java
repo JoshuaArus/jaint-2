@@ -55,7 +55,7 @@ public class Torsion implements Plugin
 
     public String getDescri()
     {
-            return("Permet d'appliquer un tourbillon à un endroit de l'image ");
+            return("Permet d'appliquer un tourbillon a un endroit de l'image ");
     }
 
     public boolean isEnabled()
@@ -78,9 +78,9 @@ public class Torsion implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -196,7 +196,7 @@ public class Torsion implements Plugin
         this.jpPrincipal.add(this.jpImage, BorderLayout.CENTER);
         this.jpPrincipal.add(this.jpInfo, BorderLayout.SOUTH);
 
-        //Parametrage des JToolTipeText pour les coordonnées
+        //Parametrage des JToolTipeText pour les coordonnees
         ToolTipManager.sharedInstance().registerComponent(this.jlImage);
         ToolTipManager.sharedInstance().setInitialDelay(0);
         ToolTipManager.sharedInstance().setDismissDelay( 1000 );
@@ -261,7 +261,7 @@ public class Torsion implements Plugin
 
 
     /**
-     *Prévialisation et mise a jour des boutons
+     *Previalisation et mise a jour des boutons
      */
     public void previsualiser()
     {
@@ -284,9 +284,9 @@ public class Torsion implements Plugin
     
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffect(BufferedImage img)
     {
@@ -346,9 +346,9 @@ public class Torsion implements Plugin
     
 
     /**
-      * Modifie la position du centre de l'effet en prenant comme parametre les coordonnées de la souris
-      * @param posX coordonnée x de la souris
-      * @param posY coordonnée y de la souris
+      * Modifie la position du centre de l'effet en prenant comme parametre les coordonnees de la souris
+      * @param posX coordonnee x de la souris
+      * @param posY coordonnee y de la souris
       */
     public void selectLocation(int posX, int posY)
     {
@@ -381,7 +381,7 @@ public class Torsion implements Plugin
 
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

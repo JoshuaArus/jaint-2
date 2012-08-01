@@ -99,7 +99,7 @@ public class JaintSpinner extends JPanel
 	{
 		super();
 
-		//Constructeurs des élements
+		//Constructeurs des elements
                 
                 this.tmp = new ImageIcon("./lib/Icons/Plugins/PolicePlus.png").getImage().getScaledInstance(45,30,Image.SCALE_DEFAULT);
                 this.iconPlus = new ImageIcon(this.tmp);
@@ -120,22 +120,22 @@ public class JaintSpinner extends JPanel
                 this.jb_moins.setIcon(this.iconMoins);
                 this.jb_plus.setIcon(this.iconPlus);
 
-                //Parametrage de la taille des élements
+                //Parametrage de la taille des elements
                 this.jtf_nombre.setPreferredSize( new Dimension(90,40));
                 this.jb_plus.setPreferredSize( new Dimension(40,40));
                 this.jb_moins.setPreferredSize( new Dimension(40,40));
 
                 
                 
-		//Parametrage des élements
+		//Parametrage des elements
 		this.jtf_nombre.setEditable(true);
 		this.jtf_nombre.setHorizontalAlignment(JTextField.RIGHT);
 
-		//Parametrage des évenements
+		//Parametrage des evenements
 		this.jb_plus.addActionListener(al_plus);
 		this.jb_moins.addActionListener(al_moins);
 
-		//Saisie controlée
+		//Saisie controlee
                 
 		jtf_nombre.setDocument(new NumberDoc(this));
                 jtf_nombre.setText("1");
@@ -145,7 +145,7 @@ public class JaintSpinner extends JPanel
 		//Parametrage du JPanel
 		this.setLayout(new BorderLayout());
 
-		//Ajout des élements à un JPanel
+		//Ajout des elements a un JPanel
 		this.add(jb_plus,BorderLayout.EAST);
 		this.add(jtf_nombre,BorderLayout.CENTER);
 		this.add(jb_moins,BorderLayout.WEST);

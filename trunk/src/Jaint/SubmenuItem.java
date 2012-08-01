@@ -7,7 +7,7 @@ import java.awt.image.BufferedImage;
 import javax.swing.JMenuItem;
 
 /**
- * Objet permettant d'être ajouté à un JPaletteItem
+ * Objet permettant d'etre ajoute a un JPaletteItem
  * @author Jeff
  */
 public class SubmenuItem extends JMenuItem

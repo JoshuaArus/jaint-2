@@ -6,7 +6,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 /**
- * Classe controlant les changement de valeur des spinners RVB et appliquant le traitement adéquat
+ * Classe controlant les changement de valeur des spinners RVB et appliquant le traitement adequat
  * @author Jeff
  */
 public class ControleSpinner implements ChangeListener
@@ -14,7 +14,7 @@ public class ControleSpinner implements ChangeListener
     private JaintPalette palette;
 
     /**
-     * Construit le contrôle
+     * Construit le controle
      * @param p La palette
      */
     public ControleSpinner(JaintPalette p)
@@ -107,8 +107,8 @@ public class ControleSpinner implements ChangeListener
     }
 
     /**
-     * Replace la ligne de pointillée dans le sélecteur de couleur
-     * @param c Couleur sélectionnée
+     * Replace la ligne de pointillee dans le selecteur de couleur
+     * @param c Couleur selectionnee
      * @param hsb Tableau HSB de la couleur
      * @param jp La JaintPalette
      */
@@ -124,13 +124,13 @@ public class ControleSpinner implements ChangeListener
         }
         else if(hsb[1] == 1f && hsb[2] != 1f)
         {
-            // première partie du degradé
+            // premiere partie du degrade
 
             jp.setPosLuminosite((int) (jp.coordX - rayonPalette + rayonPalette * hsb[2]));
         }
         else if(hsb[1] != 1f && hsb[2] == 1f)
         {
-            //deuxième partie du dégradé
+            //deuxieme partie du degrade
 
             double res = (-hsb[1] * rayonPalette) + rayonPalette;
             jp.setPosLuminosite((int) res  + jp.coordX);

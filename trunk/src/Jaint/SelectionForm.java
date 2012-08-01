@@ -5,7 +5,7 @@ import javax.swing.JSlider;
 
 /**
  *
- * @author Jean-François
+ * @author Jean-Francois
  */
 public class SelectionForm extends JComponent
 {

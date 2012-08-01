@@ -48,13 +48,13 @@ public class Screenshot extends JDialog
 		JPanel jp = new JPanel(new BorderLayout());
 
 		JPanel jptimer = new JPanel();
-		jptimer.add(new JLabel("Compte à rebours : "));
+		jptimer.add(new JLabel("Compte a rebours : "));
 		this.jtftimer = new JTextField("0", 3);
 		this.jtftimer.setHorizontalAlignment((int)JComponent.CENTER_ALIGNMENT);
 		jptimer.add(this.jtftimer);
 
 		JPanel jpcheck = new JPanel();
-		this.checkbox = new JCheckBox("Réduire la fenêtre", true);
+		this.checkbox = new JCheckBox("Reduire la fenetre", true);
 		jpcheck.add(this.checkbox);
 
 		JPanel jpboutons = new JPanel();
@@ -92,7 +92,7 @@ public class Screenshot extends JDialog
 	}
 
         /**
-         * Applique la capture d'écran
+         * Applique la capture d'ecran
          */
         public void apply()
 	{
@@ -104,7 +104,7 @@ public class Screenshot extends JDialog
 		}
 		catch(NumberFormatException nfe)
 		{
-			JOptionPane.showMessageDialog(null, "Entrez des valeurs numériques", "Erreur", JOptionPane.WARNING_MESSAGE);
+			JOptionPane.showMessageDialog(null, "Entrez des valeurs numeriques", "Erreur", JOptionPane.WARNING_MESSAGE);
 		}
 	}
 
@@ -116,7 +116,7 @@ public class Screenshot extends JDialog
 		this.dispose();
 	}
         /**
-         * Renvoie le temps du minuteur entré par l'utilisateur
+         * Renvoie le temps du minuteur entre par l'utilisateur
          * @return Le temps
          */
         public int getTime()
@@ -124,7 +124,7 @@ public class Screenshot extends JDialog
 		return(this.time);
 	}
         /**
-         * Peremt de savoir si l'utilisateur a cliqué sur OK
+         * Peremt de savoir si l'utilisateur a clique sur OK
          * @return
          */
         public boolean getOk()
@@ -132,7 +132,7 @@ public class Screenshot extends JDialog
 		return(this.ok);
 	}
         /**
-         * Permet de savoir si l'utilisateur a souhaité réduite la fenêtre
+         * Permet de savoir si l'utilisateur a souhaite reduite la fenetre
          * @return
          */
         public boolean getMinimize()

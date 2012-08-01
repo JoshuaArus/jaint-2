@@ -65,9 +65,9 @@ public class Teinte implements Plugin
     }
 
    /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -115,7 +115,7 @@ public class Teinte implements Plugin
 
      
 
-        /*Ajout de l'image réduite dans le panel nord*/
+        /*Ajout de l'image reduite dans le panel nord*/
         int width = img.getWidth();
         int height = img.getHeight();
 
@@ -197,7 +197,7 @@ public class Teinte implements Plugin
         this.jd.dispose();
     }
     /**
-     * Recupere les valeurs de la couleur selectionnée par le JSliderCouleur
+     * Recupere les valeurs de la couleur selectionnee par le JSliderCouleur
      */
     public void setJsValue()
     {
@@ -212,7 +212,7 @@ public class Teinte implements Plugin
 
 
     /**
-     *Prévialiser
+     *Previaliser
      */
     public void previsualiser()
     {
@@ -240,7 +240,7 @@ public class Teinte implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)
@@ -250,9 +250,9 @@ public class Teinte implements Plugin
 
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage image)
     {

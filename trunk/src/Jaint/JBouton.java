@@ -9,7 +9,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 /**
- * Classe créant des boutons similaires à des radio boutons
+ * Classe creant des boutons similaires a des radio boutons
  * @author Jeff
  */
 public class JBouton extends JButton
@@ -44,7 +44,7 @@ public class JBouton extends JButton
     }
 
     /**
-     * permet de dire que le bouton est sélectionnée
+     * permet de dire que le bouton est selectionnee
      */
     public void check()
     {
@@ -52,7 +52,7 @@ public class JBouton extends JButton
     }
 
     /**
-     * permet de dire que le bouton est déselectionnée
+     * permet de dire que le bouton est deselectionnee
      */
     public void uncheck()
     {
@@ -60,8 +60,8 @@ public class JBouton extends JButton
     }
 
     /**
-     * Teste si le bouton est sélectionné
-     * @return Résultat du test
+     * Teste si le bouton est selectionne
+     * @return Resultat du test
      */
     public boolean isChecked()
     {
@@ -69,7 +69,7 @@ public class JBouton extends JButton
     }
 
     /**
-     * place la couleur par défaut des boutons du sélecteur de couleur
+     * place la couleur par defaut des boutons du selecteur de couleur
      * @param btn Le tableau comportant les deux boutons
      */
     public static void setColorIcon(JBouton[] btn)
@@ -82,9 +82,9 @@ public class JBouton extends JButton
     }
 
     /**
-     * Change la couleur du bouton sélectionnée
+     * Change la couleur du bouton selectionnee
      * @param btn Le tableau de bouton
-     * @param color La couleur à appliquer
+     * @param color La couleur a appliquer
      */
     public static void setColorIcon(JBouton[] btn, Color color)
     {

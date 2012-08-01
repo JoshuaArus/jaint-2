@@ -16,7 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 /**
- * JDialog permettant de créer un nouveau fichier
+ * JDialog permettant de creer un nouveau fichier
  * @author Jeff
  */
 public class NouveauFichier extends JDialog
@@ -135,8 +135,8 @@ public class NouveauFichier extends JDialog
     }
 
     /**
-     * Renvoie l'image créé
-     * @return L'image crée
+     * Renvoie l'image cree
+     * @return L'image cree
      */
     public BufferedImage getBufferedImage()
     {
@@ -144,8 +144,8 @@ public class NouveauFichier extends JDialog
     }
 
     /**
-     * Teste si on a cliqué sur OK
-     * @return Résultat du test
+     * Teste si on a clique sur OK
+     * @return Resultat du test
      */
     public boolean getOk()
     {
@@ -153,7 +153,7 @@ public class NouveauFichier extends JDialog
     }
 
     /**
-     * Renvoie la largeur entrée
+     * Renvoie la largeur entree
      * @return La largeur
      */
     public String getLargeur()
@@ -162,7 +162,7 @@ public class NouveauFichier extends JDialog
     }
 
     /**
-     * Renvoie la hauteur entrée
+     * Renvoie la hauteur entree
      * @return La hauteur
      */
     public String getHauteur()

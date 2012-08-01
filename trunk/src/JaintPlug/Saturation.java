@@ -88,9 +88,9 @@ public class Saturation implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -165,13 +165,13 @@ public class Saturation implements Plugin
 
         miniBi = Pictimage.toBufferedImage(mini);
 
-        //Création de la miniature de l'image flou
+        //Creation de la miniature de l'image flou
         this.biSatMoins = applySatMoins(miniBi);
 
-        //Création de la miniature de l'image d'origine
+        //Creation de la miniature de l'image d'origine
         this.biOri = miniBi;
 
-        //Création de la miniature de l'image plus nette
+        //Creation de la miniature de l'image plus nette
         this.biSatPlus = applySatPlus(miniBi);
 
         //JPanel contenant l'image et le jlabel de flou
@@ -191,7 +191,7 @@ public class Saturation implements Plugin
 
         this.jpOri.add(this.jbOri,  BorderLayout.CENTER);
 
-        //JPanel contenant l'image et le jlabel de netteté
+        //JPanel contenant l'image et le jlabel de nettete
         this.jbSatPlus = new JButton(new ImageIcon(this.biSatPlus));
         this.jbSatPlus.addActionListener(new EcouteurSatPlus(this));
         this.jlSatPlus = new JLabel(new ImageIcon("./lib/Icons/Plugins/satPlus.png"));
@@ -237,9 +237,9 @@ public class Saturation implements Plugin
 
 
     /**
-     * Applique les différents effets à l'image courante et renvoie l'image modifié
+     * Applique les differents effets a l'image courante et renvoie l'image modifie
      * @param img image courante
-     * @return imgModif image modifiée
+     * @return imgModif image modifiee
      */
     public BufferedImage applyEffect(BufferedImage img)
     {
@@ -272,9 +272,9 @@ public class Saturation implements Plugin
 
 
     /**
-     * Diminue la saturation de l'image passée en parametre
-     * @param img image à modifier
-     * @return img modifiée
+     * Diminue la saturation de l'image passee en parametre
+     * @param img image a modifier
+     * @return img modifiee
      */
     public BufferedImage applySatMoins(BufferedImage img)
     {
@@ -320,9 +320,9 @@ public class Saturation implements Plugin
     }
 
     /**
-     * Augmente la saturation de l'image passée en parametre
-     * @param img image à modifier
-     * @return img modifiée
+     * Augmente la saturation de l'image passee en parametre
+     * @param img image a modifier
+     * @return img modifiee
      */
     public BufferedImage applySatPlus(BufferedImage img)
     {
@@ -366,7 +366,7 @@ public class Saturation implements Plugin
     }
 
     /**
-     *Présualiser et mise a jour des boutons
+     *Presualiser et mise a jour des boutons
      */
     public void previsualiserSatPlus()
     {
@@ -387,7 +387,7 @@ public class Saturation implements Plugin
     }
 
     /**
-     *Présualiser et mise a jour des boutons
+     *Presualiser et mise a jour des boutons
      */
     public void previsualiserSatMoins()
     {
@@ -408,7 +408,7 @@ public class Saturation implements Plugin
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 
 /**
- * Classe mettant à jour le centre de la palette lorsque une forme géométrique est sélectionnée
+ * Classe mettant a jour le centre de la palette lorsque une forme geometrique est selectionnee
  * @author Jeff
  */
 public class EcouteurSelectionForm implements ActionListener

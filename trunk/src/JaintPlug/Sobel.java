@@ -76,9 +76,9 @@ public class Sobel implements Plugin
     }
 
     /**
-     * Prend l'image courante en parametre et retourne l'image modifié ou non
+     * Prend l'image courante en parametre et retourne l'image modifie ou non
      * @param img image courante
-     * @return imgModif image modifié ou non
+     * @return imgModif image modifie ou non
      */
     public BufferedImage modify(BufferedImage img)
     {
@@ -117,9 +117,9 @@ public class Sobel implements Plugin
     }
 
     /**
-     * Applique l'effet à l'image en parametre et retourne l'image modifiée
+     * Applique l'effet a l'image en parametre et retourne l'image modifiee
      * @param img BufferedImage image courante
-     * @return biModif BufferedImage image modifié
+     * @return biModif BufferedImage image modifie
      */
     public BufferedImage applyEffectPlugin(BufferedImage img)
     {
@@ -134,20 +134,20 @@ public class Sobel implements Plugin
                     if (((rgb >>24 ) & 0xFF) != 0)
                     {
                         // passage horizontale
-                                        // Detection de la différence de couleur avec un balayage de haut en bas
+                                        // Detection de la difference de couleur avec un balayage de haut en bas
                         boolean ident1 = couleurIdentique( img.getRGB( i - 1, j - 1 ), img.getRGB( i - 1, j + 1 ),this.tolerance );
                         boolean ident2 = couleurIdentique( img.getRGB( i, j - 1 ), img.getRGB( i, j + 1 ),this.tolerance );
                         boolean ident3 = couleurIdentique( img.getRGB( i + 1, j - 1 ), img.getRGB( i + 1, j + 1 ),this.tolerance );
 
 
                         // passage verticale
-                        // Détection de la différence de couleur avec un balayage de gauche a droite
+                        // Detection de la difference de couleur avec un balayage de gauche a droite
                         boolean ident4 = couleurIdentique( img.getRGB( i - 1, j - 1 ), img.getRGB( i + 1, j - 1 ),this.tolerance );
                         boolean ident5 = couleurIdentique( img.getRGB( i - 1, j ), img.getRGB( i + 1, j ),this.tolerance );
                         boolean ident6 = couleurIdentique( img.getRGB( i - 1, j + 1 ), img.getRGB( i + 1, j + 1 ),this.tolerance );
 
 
-                        if ( !ident5 ||!ident4 ||!ident6 ||!ident1 ||!ident3 ||!ident2 )	// si une de couleur est différente
+                        if ( !ident5 ||!ident4 ||!ident6 ||!ident1 ||!ident3 ||!ident2 )	// si une de couleur est differente
                                 img_sobel.setRGB( i, j, ( new Color( 255, 255, 255 ) ).getRGB() );	// on met du blanc
                         else																//sinon
                                 img_sobel.setRGB( i, j, ( new Color( 0, 0, 0 ) ).getRGB() );	//on met du noir
@@ -272,7 +272,7 @@ public class Sobel implements Plugin
     }
 
     /**
-     *Recupere la tolérance donnée par le JaintSpiner
+     *Recupere la tolerance donnee par le JaintSpiner
      */
     public void setTaille()
     {
@@ -282,10 +282,10 @@ public class Sobel implements Plugin
 
 
     /**
-    *	Méthode comparant deux couleurs avec une certaine tolérance et retournant un boolean
+    *	Methode comparant deux couleurs avec une certaine tolerance et retournant un boolean
     *
-    *	@param	pixel1		Couleur du premier pixel à comparer
-    *	@param	pixel2		Couleur du deuxieme pixel à comparer
+    *	@param	pixel1		Couleur du premier pixel a comparer
+    *	@param	pixel2		Couleur du deuxieme pixel a comparer
     *	@param	tolerance	Difference tolere entre les deux couleurs pour les declarer identiques
     *	@return	estIdentique	Vrai si les couleurs sont identiques, faux sinon.
     */
@@ -307,11 +307,11 @@ public class Sobel implements Plugin
 
     /**
     *
-    *	Compare deux couleurs et retourne la différence qu'il y a entre les deux
+    *	Compare deux couleurs et retourne la difference qu'il y a entre les deux
     *
-    *	@param	pixel1		Couleur du premier pixel à comparer
-    *	@param	pixel2		Couleur du deuxieme pixel à comparer
-    *	@return	difference		Correspond a la différence qu'il y a entre 2couleurs
+    *	@param	pixel1		Couleur du premier pixel a comparer
+    *	@param	pixel2		Couleur du deuxieme pixel a comparer
+    *	@return	difference		Correspond a la difference qu'il y a entre 2couleurs
     */
     public static int difference_couleur( int pixel1, int pixel2 )
     {
@@ -319,15 +319,15 @@ public class Sobel implements Plugin
         Color couleur2 = new Color( pixel2 );
 
         int   diff     = Math.abs( couleur1.getRed() - couleur2.getRed() );
-        diff += Math.abs( couleur1.getGreen() - couleur2.getGreen() );		// calcule la différence des trois composantes
+        diff += Math.abs( couleur1.getGreen() - couleur2.getGreen() );		// calcule la difference des trois composantes
         diff += Math.abs( couleur1.getBlue() - couleur2.getBlue() );
 
 
-        return diff / 3;	// retourne la moyenne des différences
+        return diff / 3;	// retourne la moyenne des differences
     }
 
     /**
-     * Affiche l'icone validé sur le bouton valider si l'utilisateur se trouve dessu
+     * Affiche l'icone valide sur le bouton valider si l'utilisateur se trouve dessu
      * @param entre boolean
      */
     public void modifBtnApply(boolean entre)

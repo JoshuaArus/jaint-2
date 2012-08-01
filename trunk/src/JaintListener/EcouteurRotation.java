@@ -32,8 +32,8 @@ public class EcouteurRotation implements MouseListener, MouseMotionListener
     /**
      * 
      * @param jl JLabel contenant l'une des 4 icones de la rotation
-     * @param i Numéro du JLabel (permet de savoir lequel à été activé)
-     * @param m Taille des marges pour avoir une miniature des icones de rotation à la bonne taille
+     * @param i Numero du JLabel (permet de savoir lequel a ete active)
+     * @param m Taille des marges pour avoir une miniature des icones de rotation a la bonne taille
      * @param ihm Instance de l'interface principale
      */
     public EcouteurRotation(JLabel jl,String i,int m,IHM ihm)
@@ -79,11 +79,11 @@ public class EcouteurRotation implements MouseListener, MouseMotionListener
     }
 
     /**
-     * Fonction effectuant une rotation de l'image passée en paramètre.
-     * @param image Image à pivoter
+     * Fonction effectuant une rotation de l'image passee en parametre.
+     * @param image Image a pivoter
      * @param scale Angle de la rotation (en Radian)
-     * @param type Type de rotation à utiliser (cf <code>AffineTransformOp</code>)
-     * @return Nouvelle image contenant le resultat de l'opération
+     * @param type Type de rotation a utiliser (cf <code>AffineTransformOp</code>)
+     * @return Nouvelle image contenant le resultat de l'operation
      */
     public BufferedImage rotate(BufferedImage image, double scale,int type)
 	{
@@ -112,9 +112,9 @@ public class EcouteurRotation implements MouseListener, MouseMotionListener
     }
 
     /**
-     * Fonction calculant l'angle de la rotation selon la position de la souris et appliquant le résultat de la rotation au MainComponent
+     * Fonction calculant l'angle de la rotation selon la position de la souris et appliquant le resultat de la rotation au MainComponent
      * @param fin Position de la souris
-     * @param type Type de rotation à utiliser (cf <code>AffineTransformOp</code>)
+     * @param type Type de rotation a utiliser (cf <code>AffineTransformOp</code>)
      */
     public void modif(Point fin, int type)
     {
