@@ -5,7 +5,7 @@
 
 http://joshuaarus.fr/screenshotsJaint/ihm.jpg
 
-http://joshuaarus.fr/screenshotsJaint/Capture29.png
+
 
 ==Palettes==
 
@@ -20,6 +20,8 @@ http://joshuaarus.fr/screenshotsJaint/palette2.png
 ===Options===
 http://joshuaarus.fr/screenshotsJaint/palette3.png
 
+
+
 ==Exemple de Plugins==
 http://joshuaarus.fr/screenshotsJaint/1.png
 
@@ -31,8 +33,12 @@ http://joshuaarus.fr/screenshotsJaint/4.png
 
 http://joshuaarus.fr/screenshotsJaint/5.png
 
+
+
 ==Gestionnaire de plugins==
 http://joshuaarus.fr/screenshotsJaint/gestio.jpg
+
+
 
 ==Gestionnaire de langue==
 http://joshuaarus.fr/screenshotsJaint/langueGest.jpg
